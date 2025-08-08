@@ -1,0 +1,21 @@
+# Robots.txt for smartestassistant.com
+User-agent: *
+Allow: /
+
+# Disallow admin and internal pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important directories
+Allow: /images/
+Allow: /icons/
+Allow: /*.css$
+Allow: /*.js$
+
+# Sitemap location
+Sitemap: https://smartestassistant.com/sitemap.xml
+
+# Crawl delay for respectful crawling
+Crawl-delay: 1
