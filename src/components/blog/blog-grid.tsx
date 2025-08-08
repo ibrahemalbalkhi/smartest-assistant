@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 import { getBlogPostsByCategory, paginatePosts, formatPublishDate } from '@/lib/blog'
 import { BlogPagination } from './blog-pagination'
-import { Clock, User, ArrowRight } from 'lucide-react'
+import { Clock, User, ArrowRight } from '@/components/ui/Icons'
 
 interface BlogGridProps {
   category: string

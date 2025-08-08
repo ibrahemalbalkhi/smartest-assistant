@@ -536,7 +536,7 @@ export default function SecurityPage() {
                 </div>
                 <div className="font-semibold text-blue-200 mb-2">Emergency Incidents</div>
                 <div className="text-white text-sm mb-2">security-emergency@smartestassistant.com</div>
-                <div className="text-blue-100 text-xs">24/7 Response • < 1 hour</div>
+                <div className="text-blue-100 text-xs">24/7 Response • &lt; 1 hour</div>
               </div>
               
               <div>
@@ -545,7 +545,7 @@ export default function SecurityPage() {
                 </div>
                 <div className="font-semibold text-blue-200 mb-2">Vulnerability Reports</div>
                 <div className="text-white text-sm mb-2">security@smartestassistant.com</div>
-                <div className="text-blue-100 text-xs">Business hours • < 4 hours</div>
+                <div className="text-blue-100 text-xs">Business hours • &lt; 4 hours</div>
               </div>
               
               <div>
@@ -554,7 +554,7 @@ export default function SecurityPage() {
                 </div>
                 <div className="font-semibold text-blue-200 mb-2">General Security</div>
                 <div className="text-white text-sm mb-2">security-general@smartestassistant.com</div>
-                <div className="text-blue-100 text-xs">Business hours • < 24 hours</div>
+                <div className="text-blue-100 text-xs">Business hours • &lt; 24 hours</div>
               </div>
             </div>
           </div>

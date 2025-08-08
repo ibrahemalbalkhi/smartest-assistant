@@ -10,7 +10,7 @@ import {
   Container,
   StatCard
 } from '@/components/ui'
-import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/StructuredData'
+import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Virtual Assistant Solutions by Business Size | Startups to Enterprise | Smartest Assistant',
@@ -114,7 +114,6 @@ export default function SolutionsHub() {
         description="Tailored virtual assistant solutions for every business stage - from solopreneurs to enterprises. Find the perfect VA solution for your growth stage."
         url="https://smartestassistant.com/solutions"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
       
       {/* Hero Section */}
       <Section background="gradient" spacing="xl">

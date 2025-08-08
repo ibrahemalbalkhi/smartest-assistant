@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 import { getFeaturedPosts, formatPublishDate } from '@/lib/blog'
-import { Clock, User, ArrowRight } from 'lucide-react'
+import { Clock, User, ArrowRight } from '@/components/ui/Icons'
 
 export function FeaturedPost() {
   const featuredPosts = getFeaturedPosts(1)

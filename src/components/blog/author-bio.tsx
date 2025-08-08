@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { OptimizedImage } from '@/components/ui/optimized-image'
-import { Linkedin, Twitter, Mail } from 'lucide-react'
+import { Linkedin, Twitter, Mail } from '@/components/ui/Icons'
 import { BlogAuthor } from '@/lib/blog'
 
 interface AuthorBioProps {

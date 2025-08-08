@@ -12,13 +12,14 @@ export const metadata: Metadata = generateSEOMetadata({
   canonical: '/resources/blog'
 })
 
-export default function BlogPage({
+export default async function BlogPage({
   searchParams
 }: {
-  searchParams: { category?: string; page?: string }
+  searchParams: Promise<{ category?: string; page?: string }>
 }) {
-  const currentPage = parseInt(searchParams.page || '1', 10)
-  const selectedCategory = searchParams.category || 'all'
+  const params = await searchParams
+  const currentPage = parseInt(params.page || '1', 10)
+  const selectedCategory = params.category || 'all'
   
   const breadcrumbs = [
     { label: 'Resources', href: '/resources' },

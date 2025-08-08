@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { blogCategories } from '@/lib/blog'
-import { Tag } from 'lucide-react'
+import { Tag } from '@/components/ui/Icons'
 
 interface BlogCategoriesProps {
   selectedCategory: string

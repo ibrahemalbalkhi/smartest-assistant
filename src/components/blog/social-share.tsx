@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Share2, Twitter, Linkedin, Facebook, Link2, Check } from 'lucide-react'
+import { Share2, Twitter, Linkedin, Facebook, Link2, Check } from '@/components/ui/Icons'
 
 interface SocialShareProps {
   url: string

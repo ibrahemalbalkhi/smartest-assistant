@@ -161,9 +161,8 @@ export default function ContactPage() {
               </Paragraph>
               
               <Button 
-                as={method.href.startsWith('http') || method.href.startsWith('/') ? 'link' : 'button'}
-                href={method.href.startsWith('http') || method.href.startsWith('/') ? method.href : undefined}
-                onClick={method.href.startsWith('mailto:') || method.href.startsWith('tel:') ? () => window.location.href = method.href : undefined}
+                as="link"
+                href={method.href}
                 variant={method.recommended ? 'primary' : 'outline'}
                 fullWidth
               >

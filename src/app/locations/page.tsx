@@ -10,7 +10,7 @@ import {
   Container
 } from '@/components/ui'
 import { OptimizedImage } from '@/components/ui/optimized-image'
-import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/StructuredData'
+import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Virtual Assistant Services by Location | Smart VAs Nationwide | Smartest Assistant',
@@ -111,7 +111,6 @@ export default function LocationsHub() {
         description="Smart virtual assistant services available nationwide with local expertise and global standards. Serving major cities across the United States."
         url="https://smartestassistant.com/locations"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
       
       {/* Hero Section */}
       <Section background="gradient" spacing="xl">

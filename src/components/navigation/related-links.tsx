@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, ExternalLink } from 'lucide-react'
+import { ArrowRight, ExternalLink } from '@/components/ui/Icons'
 import { getRelatedLinks, getHubLink, generateAnchorText, type InternalLink } from '@/lib/internal-linking'
 
 interface RelatedLinksProps {

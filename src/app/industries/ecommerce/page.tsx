@@ -356,7 +356,7 @@ export default function EcommercePage() {
                   <div className="text-green-700 text-sm">During Black Friday/Cyber Monday</div>
                 </div>
                 <div className="bg-blue-50 rounded-lg p-4">
-                  <div className="font-semibold text-blue-800">< 1 Hour Response</div>
+                  <div className="font-semibold text-blue-800">&lt; 1 Hour Response</div>
                   <div className="text-blue-700 text-sm">Customer service during peak times</div>
                 </div>
                 <div className="bg-purple-50 rounded-lg p-4">

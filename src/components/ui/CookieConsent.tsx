@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Button } from './Button'
+import Button from './Button'
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false)

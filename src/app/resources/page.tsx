@@ -9,7 +9,7 @@ import {
   Button,
   Container
 } from '@/components/ui'
-import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/StructuredData'
+import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Virtual Assistant Resources Hub | Guides, Tools & Insights | Smartest Assistant',
@@ -189,7 +189,6 @@ export default function ResourcesHub() {
         description="Comprehensive collection of free resources for virtual assistant success including calculators, guides, templates, case studies, and expert insights."
         url="https://smartestassistant.com/resources"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
       
       {/* Hero Section */}
       <Section background="gradient" spacing="xl">

@@ -9,7 +9,7 @@ import {
   Button,
   Container
 } from '@/components/ui'
-import { ServiceSchema, BreadcrumbSchema } from '@/components/seo/StructuredData'
+import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Virtual Assistants by Industry | Specialized VAs for Every Sector | Smartest Assistant',
@@ -113,7 +113,6 @@ export default function IndustriesHub() {
         description="Industry-specialized virtual assistants with deep sector knowledge and expertise. Professional VAs who understand your business language and challenges."
         url="https://smartestassistant.com/industries"
       />
-      <BreadcrumbSchema breadcrumbs={breadcrumbs} />
       
       {/* Hero Section */}
       <Section background="gradient" spacing="xl">

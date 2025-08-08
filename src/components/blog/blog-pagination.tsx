@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronLeft, ChevronRight } from 'lucide-react'
+import { ChevronLeft, ChevronRight } from '@/components/ui/Icons'
 
 interface BlogPaginationProps {
   currentPage: number

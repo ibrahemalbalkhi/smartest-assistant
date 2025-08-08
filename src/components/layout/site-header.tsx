@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, ChevronDown, Phone, ArrowRight } from 'lucide-react'
+import { Menu, X, ChevronDown, Phone, ArrowRight } from '@/components/ui/Icons'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 import { mainNavigation, quickActions } from '@/lib/navigation'
 

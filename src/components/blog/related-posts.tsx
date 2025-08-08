@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 import { getRelatedPosts, formatPublishDate, BlogPost } from '@/lib/blog'
-import { Clock, ArrowRight } from 'lucide-react'
+import { Clock, ArrowRight } from '@/components/ui/Icons'
 
 interface RelatedPostsProps {
   currentPost: BlogPost
