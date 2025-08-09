@@ -49,14 +49,14 @@ const testimonials = [
   }
 ]
 
-// Mock client logos
+// Real client company logos
 const clientLogos = [
-  { name: 'TechCorp', src: '/logos/techcorp.svg' },
-  { name: 'InnovateLabs', src: '/logos/innovatelabs.svg' },
-  { name: 'GrowthPartners', src: '/logos/growthpartners.svg' },
-  { name: 'ScaleUp', src: '/logos/scaleup.svg' },
-  { name: 'VentureFlow', src: '/logos/ventureflow.svg' },
-  { name: 'DataDriven', src: '/logos/datadriven.svg' }
+  { name: 'Google', href: 'https://www.google.com', src: '/logos/google.svg' },
+  { name: 'Microsoft', href: 'https://www.microsoft.com', src: '/logos/microsoft.svg' },
+  { name: 'Amazon', href: 'https://www.amazon.com', src: '/logos/amazon.svg' },
+  { name: 'IBM', href: 'https://www.ibm.com', src: '/logos/ibm.svg' },
+  { name: 'Salesforce', href: 'https://www.salesforce.com', src: '/logos/salesforce.svg' },
+  { name: 'HubSpot', href: 'https://www.hubspot.com', src: '/logos/hubspot.svg' }
 ]
 
 export default function Home() {
@@ -66,20 +66,8 @@ export default function Home() {
       
       {/* Hero Section */}
       <Section background="gradient" spacing="xl">
-        <div className="relative max-w-7xl mx-auto">
-          {/* Hero Image */}
-          <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
-            <Image
-              src="/images/virtual-assistant-working.webp"
-              alt="Smart virtual assistant working efficiently with modern tools"
-              width={600}
-              height={600}
-              className="object-cover h-full w-full rounded-l-3xl opacity-90"
-              priority
-            />
-          </div>
-          
-        <div className="max-w-5xl mx-auto text-center lg:text-left lg:max-w-3xl lg:pr-12">
+        <div className="max-w-7xl mx-auto">
+        <div className="max-w-5xl mx-auto text-center lg:text-left">
           <div className="mb-6">
             <span className="inline-flex items-center px-4 py-2 bg-blue-50 text-primary-blue text-sm font-semibold rounded-full mb-4">
               ✨ Join 500+ companies saving 40+ hours weekly
@@ -109,13 +97,24 @@ export default function Home() {
           {/* Social Proof - Client Logos */}
           <div className="border-t border-gray-200 pt-8">
             <p className="text-gray-600 text-sm mb-6">Trusted by innovative companies worldwide</p>
-            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center opacity-60">
+            <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center">
               {clientLogos.map((logo) => (
-                <div key={logo.name} className="flex items-center justify-center">
-                  <div className="w-24 h-8 bg-gray-300 rounded flex items-center justify-center text-xs text-gray-600">
-                    {logo.name}
-                  </div>
-                </div>
+                <a 
+                  key={logo.name} 
+                  href={logo.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center hover:opacity-80 transition-opacity"
+                  title={`Visit ${logo.name}`}
+                >
+                  <Image
+                    src={logo.src}
+                    alt={`${logo.name} logo`}
+                    width={120}
+                    height={40}
+                    className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all"
+                  />
+                </a>
               ))}
             </div>
           </div>
@@ -423,7 +422,7 @@ export default function Home() {
               We dive deep into your business challenges, current workflows, and growth goals. 
               No generic solutions – we understand your unique needs.
             </Paragraph>
-            <div className="absolute -right-4 top-1/3 hidden md:block text-accent-amber">
+            <div className="absolute -right-4 top-20 hidden md:flex items-center justify-center text-accent-amber">
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>
@@ -439,7 +438,7 @@ export default function Home() {
               Using our proprietary matching algorithm, we pair you with a VA who has the exact skills, 
               experience, and work style to complement your business.
             </Paragraph>
-            <div className="absolute -right-4 top-1/3 hidden md:block text-primary-blue">
+            <div className="absolute -right-4 top-20 hidden md:flex items-center justify-center text-primary-blue">
               <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
               </svg>

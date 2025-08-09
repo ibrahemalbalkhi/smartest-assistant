@@ -339,7 +339,7 @@ export default function ROICalculatorPage() {
           />
           
           <div className="grid md:grid-cols-3 gap-8">
-            <Link href="/resources/tools/task-audit" className="group bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+            <Link href="/resources/task-audit" className="group bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
               <div className="text-3xl mb-4">📋</div>
               <H3 className="mb-3 group-hover:text-primary-blue transition-colors">Task Audit Tool</H3>
               <Paragraph className="text-gray-600">

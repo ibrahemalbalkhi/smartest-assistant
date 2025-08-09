@@ -242,7 +242,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/resources/tools/task-audit`,
+      url: `${baseUrl}/resources/task-audit`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.6,

@@ -53,7 +53,7 @@ export function SiteFooter() {
         { label: 'E-commerce', href: '/industries/ecommerce' },
         { label: 'Real Estate', href: '/industries/real-estate' },
         { label: 'Healthcare', href: '/industries/healthcare' },
-        { label: 'Legal Services', href: '/industries/legal-services' },
+        { label: 'Legal Services', href: '/industries/legal' },
         { label: 'Consulting', href: '/industries/consulting' },
         { label: 'Finance', href: '/industries/finance' },
         { label: 'Marketing Agencies', href: '/industries/marketing-agencies' }
@@ -63,9 +63,9 @@ export function SiteFooter() {
       title: 'Company',
       links: [
         { label: 'About Us', href: '/about' },
-        { label: 'How It Works', href: '/how-it-works' },
-        { label: 'Pricing', href: '/pricing' },
-        { label: 'Schedule a Call', href: '/schedule-call' },
+        { label: 'How It Works', href: '/services#how-it-works' },
+        { label: 'Pricing', href: '/services#pricing' },
+        { label: 'Schedule a Call', href: '/schedule-a-call' },
         { label: 'Contact', href: '/contact' },
         { label: 'Careers', href: '/careers' },
         { label: 'Press', href: '/press' },
@@ -90,10 +90,21 @@ export function SiteFooter() {
       links: [
         { label: 'Privacy Policy', href: '/privacy' },
         { label: 'Terms of Service', href: '/terms' },
-        { label: 'Data Processing Agreement', href: '/dpa' },
-        { label: 'Security', href: '/security' },
-        { label: 'Compliance', href: '/compliance' },
-        { label: 'Cookie Policy', href: '/cookies' }
+        { label: 'Data Processing Agreement', href: '/legal/data-processing' },
+        { label: 'Security', href: '/legal/security' },
+        { label: 'Compliance', href: '/legal/compliance' },
+        { label: 'Cookie Policy', href: '/legal/cookies' }
+      ]
+    },
+    {
+      title: 'Key Locations',
+      links: [
+        { label: 'New York', href: '/locations/new-york-city' },
+        { label: 'London', href: '/locations/london' },
+        { label: 'Sydney', href: '/locations/sydney' },
+        { label: 'Singapore', href: '/locations/singapore' },
+        { label: 'Toronto', href: '/locations/toronto' },
+        { label: 'Dubai', href: '/locations/dubai' }
       ]
     }
   ]
@@ -173,7 +184,7 @@ export function SiteFooter() {
             {/* CTA */}
             <div className="pt-4">
               <Link
-                href="/schedule-call"
+                href="/schedule-a-call"
                 className="inline-flex items-center px-6 py-3 bg-amber-500 hover:bg-amber-400 text-white font-semibold rounded-lg transition-colors duration-200"
               >
                 Get Your Smart VA Match
@@ -183,7 +194,7 @@ export function SiteFooter() {
 
           {/* Footer links grid */}
           <div className="mt-12 xl:mt-0 xl:col-span-2">
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               {footerSections.map((section) => (
                 <div key={section.title}>
                   <h3 className="text-sm font-semibold text-white tracking-wider uppercase mb-4">

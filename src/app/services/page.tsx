@@ -327,18 +327,21 @@ export default function ServicesPage() {
             title="Strategic Assessment"
             description="We analyze your workflows to identify inefficiencies and optimization opportunities before starting any task."
             icon={<span className="text-3xl">🔍</span>}
+            variant="dark"
           />
           
           <FeatureCard
             title="Intelligent Execution"
             description="Our VAs use modern tools, AI assistance, and proven processes to complete tasks faster and more accurately."
             icon={<span className="text-3xl">⚡</span>}
+            variant="dark"
           />
           
           <FeatureCard
             title="Continuous Improvement"
             description="We provide insights and recommendations to help you optimize processes and achieve better results over time."
             icon={<span className="text-3xl">📈</span>}
+            variant="dark"
           />
         </div>
       </Section>

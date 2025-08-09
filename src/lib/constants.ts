@@ -35,7 +35,7 @@ export const NAVIGATION: NavigationItem[] = [
     children: [
       { label: 'Blog', href: '/resources/blog' },
       { label: 'ROI Calculator', href: '/resources/tools/roi-calculator' },
-      { label: 'Task Audit Tool', href: '/resources/tools/task-audit' },
+      { label: 'Task Audit Tool', href: '/resources/task-audit' },
     ]
   },
   {
@@ -233,7 +233,7 @@ export const FOOTER_LINKS = {
   resources: [
     { label: 'Blog', href: '/resources/blog' },
     { label: 'ROI Calculator', href: '/resources/tools/roi-calculator' },
-    { label: 'Task Audit Tool', href: '/resources/tools/task-audit' },
+    { label: 'Task Audit Tool', href: '/resources/task-audit' },
     { label: 'FAQ', href: '/faq' },
   ],
   legal: [

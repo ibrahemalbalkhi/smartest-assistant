@@ -229,22 +229,34 @@ interface FeatureCardProps {
     href: string
     text: string
   }
+  variant?: 'light' | 'dark'
 }
 
-export function FeatureCard({ title, description, icon, link }: FeatureCardProps) {
+export function FeatureCard({ title, description, icon, link, variant = 'light' }: FeatureCardProps) {
+  const isDark = variant === 'dark'
+  
   return (
-    <Card className="p-6">
+    <div className={cn(
+      'p-6 rounded-xl',
+      isDark ? 'bg-white/10 backdrop-blur-sm border border-white/20' : 'bg-white border border-gray-200'
+    )}>
       {icon && (
-        <div className="text-primary-blue mb-4 text-3xl">
+        <div className={cn(
+          'mb-4 text-3xl',
+          isDark ? 'text-blue-200' : 'text-primary-blue'
+        )}>
           {icon}
         </div>
       )}
-      <H4 className="mb-3">{title}</H4>
-      <Paragraph className="mb-4">{description}</Paragraph>
+      <H4 className={cn('mb-3', isDark && 'text-white')}>{title}</H4>
+      <Paragraph className={cn('mb-4', isDark && 'text-blue-100')}>{description}</Paragraph>
       {link && (
         <Link
           href={link.href}
-          className="text-primary-blue font-semibold hover:underline inline-flex items-center gap-2"
+          className={cn(
+            'font-semibold hover:underline inline-flex items-center gap-2',
+            isDark ? 'text-blue-200' : 'text-primary-blue'
+          )}
         >
           {link.text}
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -252,6 +264,6 @@ export function FeatureCard({ title, description, icon, link }: FeatureCardProps
           </svg>
         </Link>
       )}
-    </Card>
+    </div>
   )
 }
