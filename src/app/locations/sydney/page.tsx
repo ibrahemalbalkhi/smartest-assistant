@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import { LocationHero, ServiceGrid, LocationCTA, TestimonialSection } from '@/components/sections'
-import { FAQ, Section, SectionHeader, H2, H3, Paragraph, Button, StatCard, FeatureCard } from '@/components/ui'
+import { LocationHero } from '@/components/sections'
+import { FAQAccordion, TestimonialGrid, Section, SectionHeader, H2, H3, Paragraph, Button, CTAButton, StatCard, FeatureCard } from '@/components/ui'
 import { generateSEOMetadata } from '@/lib/seo'
 import { LocalBusinessSchema } from '@/components/seo/StructuredData'
 import { Breadcrumbs } from '@/components/navigation/breadcrumbs'
@@ -284,12 +284,14 @@ export default function SydneyPage() {
       </Section>
 
       {/* Testimonials */}
-      <TestimonialSection 
-        testimonials={testimonials}
-        background="gray"
-        title="Sydney Success Stories"
-        description="See how we've helped businesses across Sydney and Australia achieve more"
-      />
+      <Section background="gray" spacing="lg">
+        <SectionHeader
+          title="Sydney Success Stories"
+          description="See how we've helped businesses across Sydney and Australia achieve more"
+          centered
+        />
+        <TestimonialGrid testimonials={testimonials} />
+      </Section>
 
       {/* FAQ Section */}
       <Section spacing="lg">
@@ -298,15 +300,25 @@ export default function SydneyPage() {
           centered
         />
         <div className="max-w-3xl mx-auto">
-          <FAQ faqs={sydneyFAQs} />
+          <FAQAccordion faqs={sydneyFAQs} />
         </div>
       </Section>
 
       {/* CTA Section */}
-      <LocationCTA 
-        city="Sydney"
-        description="Join 170+ Sydney businesses that have transformed their operations with smart virtual assistants"
-      />
+      <Section background="primary" spacing="lg">
+        <div className="text-center text-white">
+          <H2 className="text-white mb-4">Ready to Scale Your Sydney Business?</H2>
+          <Paragraph className="text-white/90 text-lg mb-8 max-w-2xl mx-auto">
+            Join 170+ Sydney businesses that have transformed their operations with smart virtual assistants
+          </Paragraph>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <CTAButton href="/schedule-call" size="lg" variant="secondary" text="Schedule Free Consultation" />
+            <Button href="/services" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-primary-blue">
+              Explore Services
+            </Button>
+          </div>
+        </div>
+      </Section>
 
       {/* Related Links */}
       <Section spacing="lg">

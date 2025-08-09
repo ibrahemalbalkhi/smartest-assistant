@@ -162,7 +162,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'austin',
     'seattle',
     'boston',
-    'atlanta'
+    'denver',
+    'london',
+    'dubai',
+    'singapore',
+    'toronto',
+    'sydney'
   ].map(location => ({
     url: `${baseUrl}/locations/${location}`,
     lastModified: currentDate,
@@ -188,7 +193,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     'healthcare',
     'legal',
     'consulting',
-    'manufacturing',
     'finance',
     'marketing-agencies'
   ].map(industry => ({
@@ -212,8 +216,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const solutionPages = [
     'for-entrepreneurs',
     'for-executives',
-    'for-small-businesses', 
-    'for-startups'
+    'for-small-businesses'
   ].map(solution => ({
     url: `${baseUrl}/solutions/${solution}`,
     lastModified: currentDate,
@@ -236,6 +239,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${baseUrl}/resources/roi-calculator`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/resources/tools/roi-calculator`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
@@ -249,6 +258,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/resources/case-studies`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/resources/delegation-guide`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/resources/getting-started`,
+      lastModified: currentDate,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/resources/templates`,
       lastModified: currentDate,
       changeFrequency: 'monthly' as const,
       priority: 0.6,

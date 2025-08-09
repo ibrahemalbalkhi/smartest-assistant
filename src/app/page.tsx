@@ -51,12 +51,12 @@ const testimonials = [
 
 // Real client company logos
 const clientLogos = [
-  { name: 'Google', href: 'https://www.google.com', src: '/logos/google-logo.png' },
-  { name: 'Microsoft', href: 'https://www.microsoft.com', src: '/logos/microsoft-logo.png' },
-  { name: 'Amazon', href: 'https://www.amazon.com', src: '/logos/amazon-logo.png' },
-  { name: 'IBM', href: 'https://www.ibm.com', src: '/logos/ibm-logo.png' },
-  { name: 'Salesforce', href: 'https://www.salesforce.com', src: '/logos/salesforce-logo.png' },
-  { name: 'HubSpot', href: 'https://www.hubspot.com', src: '/logos/hubspot-logo.png' }
+  { name: 'Google', href: 'https://www.google.com', src: '/logos/google-logo-transparent.png' },
+  { name: 'Microsoft', href: 'https://www.microsoft.com', src: '/logos/MSFT_logo_png_grey.png' },
+  { name: 'Amazon', href: 'https://www.amazon.com', src: '/logos/Amazon_logo.png' },
+  { name: 'IBM', href: 'https://www.ibm.com', src: '/logos/ibm-logo-black-transparent.png' },
+  { name: 'Salesforce', href: 'https://www.salesforce.com', src: '/logos/Salesforce.com_logo.png' },
+  { name: 'HubSpot', href: 'https://www.hubspot.com', src: '/logos/HubSpot_Logo.png' }
 ]
 
 export default function Home() {
