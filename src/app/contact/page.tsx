@@ -32,60 +32,46 @@ const contactMethods = [
     title: 'Email Us',
     description: 'Send us an email with your questions or requirements. We typically respond within 2-4 hours during business days.',
     icon: '📧',
-    action: 'hello@smartestassistant.com',
-    href: 'mailto:hello@smartestassistant.com'
+    action: 'hello@chiefnest.com',
+    href: 'mailto:hello@chiefnest.com'
   },
-  {
-    title: 'Live Chat',
-    description: 'Chat with our team in real-time during business hours for immediate assistance and quick questions.',
-    icon: '💬',
-    action: 'Start Chat',
-    href: '#chat'
-  },
-  {
-    title: 'Phone Support',
-    description: 'Call us directly for urgent inquiries or detailed discussions about your virtual assistant requirements.',
-    icon: '📞',
-    action: '(555) 123-4567',
-    href: 'tel:+15551234567'
-  }
 ]
 
 const inquiryTypes = [
   {
     type: 'New Client Inquiries',
     description: 'Ready to get started with a virtual assistant? Schedule a consultation to discuss your needs.',
-    contact: 'Schedule consultation or email hello@smartestassistant.com',
+    contact: 'Schedule consultation or email hello@chiefnest.com',
     icon: '🚀'
   },
   {
     type: 'Current Client Support',
     description: 'Need help with your current VA partnership or have questions about services?',
-    contact: 'Email support@smartestassistant.com or use your client portal',
+    contact: 'Email support@chiefnest.com or use your client portal',
     icon: '🤝'
   },
   {
     type: 'Partnership Opportunities',
     description: 'Interested in partnering with us or exploring collaboration opportunities?',
-    contact: 'Email partnerships@smartestassistant.com',
+    contact: 'Email partnerships@chiefnest.com',
     icon: '🤝'
   },
   {
     type: 'Career Inquiries',
     description: 'Want to join our team as a virtual assistant or in another capacity?',
-    contact: 'Visit our careers page or email careers@smartestassistant.com',
+    contact: 'Visit our careers page or email careers@chiefnest.com',
     icon: '💼'
   },
   {
     type: 'Media & Press',
     description: 'Media inquiries, interview requests, or press-related questions?',
-    contact: 'Email press@smartestassistant.com',
+    contact: 'Email press@chiefnest.com',
     icon: '📰'
   },
   {
     type: 'Technical Support',
     description: 'Having technical issues with our platform or need IT assistance?',
-    contact: 'Email tech@smartestassistant.com with detailed description',
+    contact: 'Email tech@chiefnest.com with detailed description',
     icon: '🔧'
   }
 ]

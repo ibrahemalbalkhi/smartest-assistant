@@ -103,13 +103,6 @@ export function SiteHeader() {
 
           {/* Desktop Actions */}
           <div className="hidden lg:flex items-center space-x-4">
-            <a
-              href="tel:+1-XXX-XXX-XXXX"
-              className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200"
-            >
-              <Phone className="h-4 w-4 mr-2" />
-              <span className="text-sm font-medium">Call Now</span>
-            </a>
             
             {quickActions.map((action) => (
               <Link
@@ -228,20 +221,6 @@ export function SiteHeader() {
 
             {/* Mobile Actions - Enhanced for touch */}
             <div className="pt-6 border-t border-gray-200 space-y-3">
-              <a
-                href="tel:+1-XXX-XXX-XXXX"
-                className="
-                  flex items-center min-h-[52px] px-4 py-3 
-                  text-white bg-green-600 hover:bg-green-700 active:bg-green-800
-                  rounded-lg font-semibold text-lg
-                  transition-all duration-200
-                  active:scale-98
-                  focus:outline-none focus:ring-4 focus:ring-green-200
-                "
-              >
-                <Phone className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>Call Now: +1 (XXX) XXX-XXXX</span>
-              </a>
               
               {quickActions.map((action) => (
                 <Link

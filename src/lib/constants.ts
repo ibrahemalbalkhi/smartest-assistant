@@ -2,8 +2,8 @@ import { NavigationItem, Service, Location, Industry } from '@/types'
 
 export const COMPANY_NAME = 'Smartest Assistant'
 export const COMPANY_TAGLINE = 'Smart Virtual Assistants Who Think Like Partners, Work Like Pros'
-export const COMPANY_EMAIL = 'hello@smartestassistant.com'
-export const COMPANY_PHONE = '+1-XXX-XXX-XXXX'
+export const COMPANY_EMAIL = 'hello@chiefnest.com'
+export const COMPANY_PHONE = ''
 
 export const NAVIGATION: NavigationItem[] = [
   {
@@ -43,8 +43,16 @@ export const NAVIGATION: NavigationItem[] = [
     href: '/about'
   },
   {
-    label: 'Schedule a Call',
-    href: '/schedule-a-call'
+    label: 'Locations',
+    href: '/locations',
+    children: [
+      { label: 'San Francisco', href: '/locations/san-francisco' },
+      { label: 'New York City', href: '/locations/new-york-city' },
+      { label: 'Chicago', href: '/locations/chicago' },
+      { label: 'Los Angeles', href: '/locations/los-angeles' },
+      { label: 'Miami', href: '/locations/miami' },
+      { label: 'All Locations', href: '/locations' },
+    ]
   }
 ]
 

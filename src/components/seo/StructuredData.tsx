@@ -26,8 +26,7 @@ export function OrganizationSchema() {
     "url": "https://smartestassistant.com",
     "logo": "https://smartestassistant.com/logo.png",
     "image": "https://smartestassistant.com/og-image.png",
-    "telephone": "+1-XXX-XXX-XXXX",
-    "email": "hello@smartestassistant.com",
+    "email": "hello@chiefnest.com",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "US"
@@ -84,7 +83,6 @@ export function ServiceSchema({
     "availableChannel": {
       "@type": "ServiceChannel",
       "serviceUrl": url,
-      "servicePhone": "+1-XXX-XXX-XXXX",
       "availableLanguage": {
         "@type": "Language",
         "name": "English"
@@ -115,7 +113,6 @@ export function LocalBusinessSchema({
     "name": `Smartest Assistant - ${city}`,
     "description": `Smart virtual assistant services for ${city} businesses`,
     "url": url,
-    "telephone": "+1-XXX-XXX-XXXX",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": city,

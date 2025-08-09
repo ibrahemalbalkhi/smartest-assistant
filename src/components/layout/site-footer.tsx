@@ -153,23 +153,14 @@ export function SiteFooter() {
             
             {/* Contact info */}
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-amber-400 flex-shrink-0" />
-                <a 
-                  href="tel:+1-XXX-XXX-XXXX" 
-                  className="text-gray-300 hover:text-white transition-colors"
-                >
-                  +1 (XXX) XXX-XXXX
-                </a>
-              </div>
               
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-amber-400 flex-shrink-0" />
                 <a 
-                  href="mailto:hello@smartestassistant.com"
+                  href="mailto:hello@chiefnest.com"
                   className="text-gray-300 hover:text-white transition-colors"
                 >
-                  hello@smartestassistant.com
+                  hello@chiefnest.com
                 </a>
               </div>
               

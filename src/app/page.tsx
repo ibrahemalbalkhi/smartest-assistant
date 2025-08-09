@@ -74,7 +74,7 @@ export default function Home() {
             </span>
           </div>
           
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 text-gray-900 leading-tight">
+          <h1 className="hero-title text-5xl lg:text-7xl font-bold mb-6 text-gray-900 leading-tight">
             Smart Virtual Assistants Who{' '}
             <span className="text-primary-blue">Think Like Partners</span>,{' '}
             <span className="text-accent-amber">Work Like Pros</span>
@@ -112,7 +112,9 @@ export default function Home() {
                     alt={`${logo.name} logo`}
                     width={120}
                     height={40}
+                    sizes="(max-width: 768px) 80px, 120px"
                     className="h-8 w-auto object-contain filter grayscale hover:grayscale-0 transition-all"
+                    loading="lazy"
                   />
                 </a>
               ))}

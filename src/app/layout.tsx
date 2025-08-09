@@ -84,6 +84,39 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${firaCode.variable}`}>
+      <head>
+        {/* Resource hints for performance */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+        
+        {/* Preload critical resources */}
+        <link 
+          rel="preload" 
+          href="/images/logo-smartest-assistant.webp" 
+          as="image" 
+          type="image/webp"
+        />
+        
+        {/* Critical CSS for above-the-fold content */}
+        <style dangerouslySetInnerHTML={{
+          __html: `
+            .hero-title { 
+              font-display: swap; 
+              contain: layout style;
+            }
+            .critical-content {
+              content-visibility: auto;
+              contain-intrinsic-size: 0 500px;
+            }
+          `
+        }} />
+        
+        {/* Performance optimizations */}
+        <meta name="theme-color" content="#1E40AF" />
+        <meta name="color-scheme" content="light" />
+      </head>
       <body className="font-sans antialiased">
         <Header />
         <main className="pt-16 lg:pt-20 min-h-screen">

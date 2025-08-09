@@ -200,9 +200,8 @@ export function generateServiceSchema({
       "logo": "https://smartestassistant.com/images/logo-smartest-assistant.webp",
       "contactPoint": {
         "@type": "ContactPoint",
-        "telephone": "+1-XXX-XXX-XXXX",
         "contactType": "customer service",
-        "email": "hello@smartestassistant.com"
+        "email": "hello@chiefnest.com"
       }
     },
     "serviceType": serviceType,
@@ -213,7 +212,6 @@ export function generateServiceSchema({
     "availableChannel": {
       "@type": "ServiceChannel",
       "serviceUrl": url,
-      "servicePhone": "+1-XXX-XXX-XXXX",
       "availableLanguage": {
         "@type": "Language",
         "name": "English"
@@ -258,8 +256,7 @@ export function generateLocalBusinessSchema({
     "name": name,
     "description": description,
     "url": url,
-    "telephone": "+1-XXX-XXX-XXXX",
-    "email": "hello@smartestassistant.com",
+    "email": "hello@chiefnest.com",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": city,

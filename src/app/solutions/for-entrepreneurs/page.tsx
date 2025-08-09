@@ -205,20 +205,10 @@ export default function EntrepreneursPage() {
       
       {/* Hero Section */}
       <Section background="white" spacing="xl">
-        <div className="relative max-w-7xl mx-auto">
-          {/* Hero Image */}
-          <div className="absolute right-0 top-0 w-1/2 h-full hidden lg:block">
-            <Image
-              src="/images/entrepreneur-working.webp"
-              alt="Entrepreneur working on strategic business growth"
-              width={600}
-              height={600}
-              className="object-cover h-full w-full rounded-l-3xl opacity-90"
-              priority
-            />
-          </div>
-          
-        <div className="max-w-4xl mx-auto text-center lg:text-left lg:max-w-3xl lg:pr-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div className="order-2 lg:order-1">
           <div className="inline-flex items-center px-4 py-2 bg-blue-50 text-primary-blue text-sm font-semibold rounded-full mb-6">
             🚀 For Entrepreneurs & Founders
           </div>
@@ -265,7 +255,20 @@ export default function EntrepreneursPage() {
               Calculate Your ROI
             </Button>
           </div>
-        </div>
+            </div>
+            
+            {/* Hero Image */}
+            <div className="order-1 lg:order-2">
+              <Image
+                src="/images/entrepreneur-working.webp"
+                alt="Entrepreneur working on strategic business growth"
+                width={600}
+                height={600}
+                className="object-cover w-full h-96 lg:h-full rounded-3xl shadow-2xl"
+                priority
+              />
+            </div>
+          </div>
         </div>
       </Section>
 

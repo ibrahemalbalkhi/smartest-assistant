@@ -244,13 +244,13 @@ export default function PrivacyPage() {
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
                 <div className="font-semibold text-gray-800 mb-2">Privacy Officer</div>
-                <div className="text-gray-600 mb-1">privacy@smartestassistant.com</div>
+                <div className="text-gray-600 mb-1">privacy@chiefnest.com</div>
                 <div className="text-gray-500 text-sm">Response within 48 hours</div>
               </div>
               
               <div>
                 <div className="font-semibold text-gray-800 mb-2">General Inquiries</div>
-                <div className="text-gray-600 mb-1">hello@smartestassistant.com</div>
+                <div className="text-gray-600 mb-1">hello@chiefnest.com</div>
                 <div className="text-gray-500 text-sm">General privacy questions</div>
               </div>
             </div>
