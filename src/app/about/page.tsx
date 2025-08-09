@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import Image from 'next/image'
 import { 
   Section, 
@@ -8,9 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard
+  StatCard
 } from '@/components/ui'
 
 export const metadata: Metadata = {
@@ -89,7 +86,7 @@ export default function AboutPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">We Believe Virtual Assistants Should Think Like Partners</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             At Smartest Assistant, we don't provide task executors - we provide strategic partners who think 
             ahead, solve problems proactively, and help you achieve your most ambitious business goals.
           </Paragraph>

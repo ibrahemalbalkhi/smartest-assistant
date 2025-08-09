@@ -81,6 +81,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'customer-support-testimonial-1',
   name: 'David Park',
   role: 'COO',
   company: 'TechStart Solutions',

@@ -106,6 +106,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'cold-outreach-testimonial-1',
   name: 'David Chen',
   role: 'Sales Director',
   company: 'TechScale Solutions',

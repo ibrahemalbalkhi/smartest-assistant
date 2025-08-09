@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, useEffect } from 'react'
-import { Calculator, DollarSign, Clock, TrendingUp, Users, Download } from '@/components/ui/Icons'
+import { useState } from 'react'
+import { Calculator, DollarSign, Clock, TrendingUp, Users, Download } from 'lucide-react'
 
 interface ROIInputs {
   annualSalary: number

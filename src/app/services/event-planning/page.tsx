@@ -1,7 +1,6 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { ServiceHero } from '@/components/sections'
-import { ServiceSchema, FAQSchema } from '@/components/seo/StructuredData'
+import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
   title: 'Event Planning Virtual Assistant Services | Event VAs | Smartest Assistant',

@@ -1,15 +1,13 @@
-import { ReactNode, HTMLAttributes } from 'react'
+import React, { ReactNode, HTMLAttributes } from 'react'
 import { cn } from '@/utils'
 
 interface TypographyProps extends HTMLAttributes<HTMLElement> {
   children: ReactNode
-  as?: keyof JSX.IntrinsicElements
 }
 
-export function H1({ children, className, as = 'h1', ...props }: TypographyProps) {
-  const Component = as
+export function H1({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h1 
       className={cn(
         'text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900',
         className
@@ -17,14 +15,13 @@ export function H1({ children, className, as = 'h1', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h1>
   )
 }
 
-export function H2({ children, className, as = 'h2', ...props }: TypographyProps) {
-  const Component = as
+export function H2({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h2 
       className={cn(
         'text-3xl md:text-4xl font-bold tracking-tight text-gray-900',
         className
@@ -32,14 +29,13 @@ export function H2({ children, className, as = 'h2', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h2>
   )
 }
 
-export function H3({ children, className, as = 'h3', ...props }: TypographyProps) {
-  const Component = as
+export function H3({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h3 
       className={cn(
         'text-2xl md:text-3xl font-bold text-gray-900',
         className
@@ -47,14 +43,13 @@ export function H3({ children, className, as = 'h3', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h3>
   )
 }
 
-export function H4({ children, className, as = 'h4', ...props }: TypographyProps) {
-  const Component = as
+export function H4({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h4 
       className={cn(
         'text-xl md:text-2xl font-semibold text-gray-900',
         className
@@ -62,14 +57,13 @@ export function H4({ children, className, as = 'h4', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h4>
   )
 }
 
-export function H5({ children, className, as = 'h5', ...props }: TypographyProps) {
-  const Component = as
+export function H5({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h5 
       className={cn(
         'text-lg md:text-xl font-semibold text-gray-900',
         className
@@ -77,14 +71,13 @@ export function H5({ children, className, as = 'h5', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h5>
   )
 }
 
-export function H6({ children, className, as = 'h6', ...props }: TypographyProps) {
-  const Component = as
+export function H6({ children, className, ...props }: TypographyProps) {
   return (
-    <Component 
+    <h6 
       className={cn(
         'text-base md:text-lg font-semibold text-gray-900',
         className
@@ -92,7 +85,7 @@ export function H6({ children, className, as = 'h6', ...props }: TypographyProps
       {...props}
     >
       {children}
-    </Component>
+    </h6>
   )
 }
 

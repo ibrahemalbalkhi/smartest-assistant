@@ -1,7 +1,19 @@
 'use client'
 
-import { Button, ButtonProps } from '@/components/ui/button'
-import { useState } from 'react'
+import { Button } from '@/components/ui'
+import { useState, ButtonHTMLAttributes, ReactNode } from 'react'
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'outline' | 'ghost' | 'danger'
+  size?: 'xs' | 'sm' | 'base' | 'lg' | 'xl'
+  fullWidth?: boolean
+  children: ReactNode
+  as?: 'button' | 'link'
+  href?: string
+  loading?: boolean
+  leftIcon?: ReactNode
+  rightIcon?: ReactNode
+}
 
 interface EnhancedButtonProps extends ButtonProps {
   href?: string
@@ -143,13 +155,13 @@ export function EnhancedLink({
   prefetch = false,
   onClick 
 }: EnhancedLinkProps) {
-  const handleClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleClick = () => {
     if (onClick) {
       onClick()
     }
     
     // Add client-side navigation enhancement if available
-    if (typeof window !== 'undefined' && window.history && window.history.pushState) {
+    if (typeof window !== 'undefined' && window.history && 'pushState' in window.history) {
       // Could integrate with Next.js router here
       // For now, let the default navigation happen
     }

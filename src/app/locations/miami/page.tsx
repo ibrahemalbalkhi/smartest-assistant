@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const miamiIndustries = [
 
 const miamiTestimonials = [
   {
+    id: 'miami-testimonial-1',
     name: 'Carlos Rodriguez',
     role: 'Managing Director',
     company: 'Latin Bridge Capital',
@@ -68,6 +66,7 @@ const miamiTestimonials = [
     location: 'Brickell, Miami'
   },
   {
+    id: 'miami-testimonial-2',
     name: 'Isabella Santos',
     role: 'Resort Operations Manager',
     company: 'Ocean Vista Hospitality',

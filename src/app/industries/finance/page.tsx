@@ -8,8 +8,7 @@ import {
   Paragraph, 
   Button, 
   StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -88,6 +87,7 @@ const financeServices = [
 
 const financeTestimonials = [
   {
+    id: 'finance-testimonial-1',
     name: 'James Patterson',
     role: 'Managing Partner',
     company: 'Patterson Wealth Management',
@@ -96,6 +96,7 @@ const financeTestimonials = [
     location: 'Greenwich, CT'
   },
   {
+    id: 'finance-testimonial-2',
     name: 'Lisa Chen',
     role: 'VP of Operations',
     company: 'Metropolitan Investment Group',
@@ -152,9 +153,7 @@ export default function FinancePage() {
       {/* Hero Section */}
       <IndustryHero
         industry="Finance & Investment Services"
-        subtitle="COMPLIANCE-AWARE FINANCIAL SUPPORT"
-        description="Scale your financial services operations with VAs who understand regulatory requirements, client discretion, and the precision demanded in finance. Focus on clients and investments while we handle operations."
-        features={[
+        industryBenefits={[
           'Regulatory compliance expertise',
           'Financial software proficiency',
           'Client discretion & professionalism',

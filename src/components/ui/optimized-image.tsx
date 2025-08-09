@@ -3,19 +3,30 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-interface OptimizedImageProps {
+interface OptimizedImageBaseProps {
   src: string
   alt: string
-  width: number
-  height: number
   className?: string
   priority?: boolean
   sizes?: string
-  fill?: boolean
   quality?: number
   placeholder?: 'blur' | 'empty'
   blurDataURL?: string
 }
+
+interface OptimizedImageWithDimensions extends OptimizedImageBaseProps {
+  width: number
+  height: number
+  fill?: false
+}
+
+interface OptimizedImageFill extends OptimizedImageBaseProps {
+  fill: true
+  width?: never
+  height?: never
+}
+
+type OptimizedImageProps = OptimizedImageWithDimensions | OptimizedImageFill
 
 export function OptimizedImage({
   src,

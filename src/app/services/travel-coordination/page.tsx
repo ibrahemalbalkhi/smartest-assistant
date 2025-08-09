@@ -81,6 +81,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'travel-coordination-testimonial-1',
   name: 'Alexandra Chen',
   role: 'VP Sales',
   company: 'Global Tech Solutions',

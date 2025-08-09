@@ -92,6 +92,7 @@ const entrepreneurServices = [
 
 const successStories = [
   {
+    id: 'entrepreneur-testimonial-1',
     name: 'Marcus Chen',
     role: 'SaaS Founder',
     company: 'DataFlow Analytics',
@@ -104,6 +105,7 @@ const successStories = [
     }
   },
   {
+    id: 'entrepreneur-testimonial-2',
     name: 'Sarah Rodriguez',
     role: 'E-commerce Entrepreneur',
     company: 'Sustainable Style Co.',
@@ -222,7 +224,7 @@ export default function EntrepreneursPage() {
           </div>
           
           <H2 className="mb-6">Stop Working IN Your Business. Start Working ON It.</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Strategic virtual assistants who understand the entrepreneurial journey. Delegate operations, 
             reclaim your time, and focus on what only you can do: vision, strategy, and growth.
           </Paragraph>

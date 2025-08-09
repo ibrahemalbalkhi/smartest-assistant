@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { 
   Section, 
   SectionHeader,
@@ -127,7 +126,7 @@ export default function ContactPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Get In Touch With Our Team</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Ready to transform your business with a strategic virtual assistant? Have questions about our services? 
             We're here to help and would love to hear from you.
           </Paragraph>
@@ -301,7 +300,7 @@ export default function ContactPage() {
       </Section>
 
       {/* Emergency Contact */}
-      <Section background="red-50" spacing="lg">
+      <Section background="gray" spacing="lg">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-xl p-8 border border-red-200">
             <H3 className="mb-4 text-red-700">Current Client Emergency Contact</H3>

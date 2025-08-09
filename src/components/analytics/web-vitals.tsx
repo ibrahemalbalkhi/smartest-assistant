@@ -43,9 +43,9 @@ function getVitalRating(name: string, value: number): 'good' | 'needs-improvemen
       if (value <= 2500) return 'good'
       if (value <= 4000) return 'needs-improvement'
       return 'poor'
-    case 'FID':
-      if (value <= 100) return 'good'
-      if (value <= 300) return 'needs-improvement'
+    case 'INP':
+      if (value <= 200) return 'good'
+      if (value <= 500) return 'needs-improvement'
       return 'poor'
     case 'CLS':
       if (value <= 0.1) return 'good'
@@ -67,9 +67,9 @@ function getVitalRating(name: string, value: number): 'good' | 'needs-improvemen
 export function WebVitals() {
   useEffect(() => {
     // Dynamically import web-vitals to avoid affecting the main bundle
-    import('web-vitals').then(({ onCLS, onFID, onFCP, onLCP, onTTFB }) => {
+    import('web-vitals').then(({ onCLS, onINP, onFCP, onLCP, onTTFB }) => {
       onCLS(sendToAnalytics)
-      onFID(sendToAnalytics)
+      onINP(sendToAnalytics)
       onFCP(sendToAnalytics)
       onLCP(sendToAnalytics)
       onTTFB(sendToAnalytics)

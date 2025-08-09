@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const seattleIndustries = [
 
 const seattleTestimonials = [
   {
+    id: 'seattle-testimonial-1',
     name: 'Jennifer Park',
     role: 'VP of Engineering',
     company: 'CloudScale Solutions',
@@ -68,6 +66,7 @@ const seattleTestimonials = [
     location: 'South Lake Union, Seattle'
   },
   {
+    id: 'seattle-testimonial-2',
     name: 'Michael Thompson',
     role: 'Operations Director',
     company: 'EverGreen Aerospace',

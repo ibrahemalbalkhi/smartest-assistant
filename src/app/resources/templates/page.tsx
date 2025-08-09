@@ -236,7 +236,7 @@ export default function TemplatesPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Free Virtual Assistant Templates</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Download professionally designed templates to streamline your virtual assistant management, 
             improve delegation effectiveness, and ensure consistent quality results.
           </Paragraph>
@@ -286,7 +286,7 @@ export default function TemplatesPage() {
       </Section>
 
       {/* Template Bundles */}
-      <Section background="primary" spacing="lg" id="bundles">
+      <Section background="primary" spacing="lg">
         <SectionHeader
           title="Template Bundles"
           description="Complete collections of templates for different needs and experience levels"
@@ -317,7 +317,7 @@ export default function TemplatesPage() {
       </Section>
 
       {/* Individual Templates */}
-      <Section background="gray" spacing="lg" id="templates">
+      <Section background="gray" spacing="lg">
         <SectionHeader
           title="Browse Individual Templates"
           description="Find specific templates for your virtual assistant management needs"
@@ -437,7 +437,7 @@ export default function TemplatesPage() {
       </Section>
 
       {/* Success Story */}
-      <Section background="green-50" spacing="lg">
+      <Section background="gray" spacing="lg">
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-white rounded-xl p-8 shadow-lg border border-green-200">
             <div className="text-green-600 text-4xl mb-4">"</div>

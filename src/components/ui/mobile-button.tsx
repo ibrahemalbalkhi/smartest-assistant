@@ -1,7 +1,7 @@
 'use client'
 
 import { forwardRef, ButtonHTMLAttributes, ReactNode } from 'react'
-import { Loader2 } from '@/components/ui/Icons'
+import { Loader2 } from 'lucide-react'
 
 interface MobileButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode

@@ -119,7 +119,7 @@ export default function BlogPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Virtual Assistant Insights & Strategy</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Discover expert insights, practical strategies, and actionable tips for maximizing your productivity 
             and business growth through strategic virtual assistant partnerships.
           </Paragraph>

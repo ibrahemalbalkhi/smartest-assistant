@@ -216,6 +216,7 @@ const successMetrics = [
 
 const testimonials = [
   {
+    id: 'small-business-testimonial-1',
     name: 'Jennifer Walsh',
     role: 'Owner',
     company: 'Walsh Marketing Solutions',
@@ -225,6 +226,7 @@ const testimonials = [
     location: 'Denver, CO'
   },
   {
+    id: 'small-business-testimonial-2',
     name: 'Robert Kim',
     role: 'Owner',
     company: 'Elite Home Repairs',
@@ -276,7 +278,7 @@ export default function SmallBusinessesPage() {
           </div>
           
           <H2 className="mb-6">Scale Your Small Business Without the Overhead</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Get professional support that grows with your business. Virtual assistants who understand small business 
             needs and provide flexible, cost-effective solutions to help you compete and grow.
           </Paragraph>

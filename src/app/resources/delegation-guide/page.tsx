@@ -168,7 +168,7 @@ export default function DelegationGuidePage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">The Complete Delegation Guide</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Master the art of effective delegation with our comprehensive, step-by-step guide. 
             Transform how you work with virtual assistants and unlock your business potential.
           </Paragraph>

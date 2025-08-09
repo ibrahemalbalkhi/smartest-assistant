@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { 
   Section, 
   SectionHeader,
@@ -147,7 +146,7 @@ export default function CareersPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Join the Team That's Revolutionizing Virtual Assistance</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Be part of a company that values strategic thinking, professional excellence, and meaningful partnerships. 
             Help us redefine what virtual assistance can achieve for businesses worldwide.
           </Paragraph>

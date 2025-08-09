@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import { 
   Section, 
   SectionHeader,
@@ -102,7 +101,7 @@ export default function TeamPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Meet the Team Behind Your Success</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Our experienced leadership team and carefully selected virtual assistants are united by one mission: 
             helping you achieve more than you thought possible through strategic partnership and professional excellence.
           </Paragraph>

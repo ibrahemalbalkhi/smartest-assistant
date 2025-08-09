@@ -143,7 +143,7 @@ export default function FAQPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Frequently Asked Questions</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Find answers to common questions about our virtual assistant services, pricing, and how to get started. 
             Can't find what you're looking for? We're here to help.
           </Paragraph>

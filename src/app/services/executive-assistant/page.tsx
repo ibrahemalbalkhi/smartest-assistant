@@ -83,6 +83,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'executive-assistant-testimonial-1',
   name: 'Marcus Thompson',
   role: 'CEO',
   company: 'InnovateCore Technologies',

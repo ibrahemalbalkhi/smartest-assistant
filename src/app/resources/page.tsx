@@ -173,10 +173,6 @@ const resourceCategories = [
 ]
 
 export default function ResourcesHub() {
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Resources', href: '/resources', current: true }
-  ]
 
   const featuredResources = resourceCategories.flatMap(category => 
     category.resources.filter(resource => resource.featured)

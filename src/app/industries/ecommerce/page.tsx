@@ -7,9 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -97,6 +95,7 @@ const platformExpertise = [
 
 const ecommerceTestimonials = [
   {
+    id: 'ecommerce-testimonial-1',
     name: 'Jennifer Martinez',
     role: 'E-commerce Director',
     company: 'Lifestyle Brands Co.',
@@ -105,6 +104,7 @@ const ecommerceTestimonials = [
     location: 'Miami, FL'
   },
   {
+    id: 'ecommerce-testimonial-2',
     name: 'David Park',
     role: 'Amazon FBA Seller',
     company: 'Peak Performance Products',

@@ -1,6 +1,5 @@
-import { ReactNode } from 'react'
 import { cn } from '@/utils'
-import { H3, H4, Paragraph, Caption } from './Typography'
+import { H3, H4, Paragraph } from './Typography'
 import Button from './Button'
 import { Card } from './Card'
 
@@ -95,7 +94,7 @@ export default function PricingTable({
 
 function PricingCard({ plan }: { plan: PricingPlan }) {
   const formatPrice = () => {
-    const { amount, currency, period, originalAmount } = plan.price
+    const { amount, period, originalAmount } = plan.price
     
     return (
       <div className="mb-6">

@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const denverIndustries = [
 
 const denverTestimonials = [
   {
+    id: 'denver-testimonial-1',
     name: 'Mark Stevens',
     role: 'Founder & CEO',
     company: 'Peak Performance Tech',
@@ -68,6 +66,7 @@ const denverTestimonials = [
     location: 'LoDo, Denver'
   },
   {
+    id: 'denver-testimonial-2',
     name: 'Sarah Mountain',
     role: 'Operations Director',
     company: 'Rocky Mountain Renewables',

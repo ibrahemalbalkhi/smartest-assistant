@@ -6,8 +6,7 @@ import {
   H2, 
   H3, 
   Paragraph, 
-  Button,
-  StatCard
+  Button
 } from '@/components/ui'
 
 export const metadata: Metadata = {
@@ -167,7 +166,7 @@ export default function CaseStudiesPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Real Results from Real Businesses</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Discover how businesses across industries have transformed their operations, saved time, 
             and accelerated growth through strategic virtual assistant partnerships.
           </Paragraph>

@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const bostonIndustries = [
 
 const bostonTestimonials = [
   {
+    id: 'boston-testimonial-1',
     name: 'Dr. Patricia Walsh',
     role: 'Research Director',
     company: 'BioInnovate Labs',
@@ -68,6 +66,7 @@ const bostonTestimonials = [
     location: 'Cambridge, MA'
   },
   {
+    id: 'boston-testimonial-2',
     name: 'Robert Kennedy',
     role: 'Managing Partner',
     company: 'Beacon Hill Advisors',

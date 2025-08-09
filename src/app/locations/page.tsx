@@ -9,7 +9,6 @@ import {
   Button,
   Container
 } from '@/components/ui'
-import { OptimizedImage } from '@/components/ui/optimized-image'
 import { ServiceSchema } from '@/components/seo/StructuredData'
 
 export const metadata: Metadata = {
@@ -99,11 +98,6 @@ const locations = [
 ]
 
 export default function LocationsHub() {
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Locations', href: '/locations', current: true }
-  ]
-
   return (
     <>
       <ServiceSchema 

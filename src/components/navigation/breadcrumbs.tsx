@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronRight, Home } from '@/components/ui/Icons'
+import { ChevronRight, Home } from 'lucide-react'
 import { generateBreadcrumbSchema } from '@/lib/seo'
 
 interface BreadcrumbItem {
@@ -24,7 +24,10 @@ export function Breadcrumbs({ items, className = '' }: BreadcrumbsProps) {
 
   // Mark last item as current
   if (breadcrumbItems.length > 0) {
-    breadcrumbItems[breadcrumbItems.length - 1].current = true
+    const lastItem = breadcrumbItems[breadcrumbItems.length - 1]
+    if (lastItem) {
+      lastItem.current = true
+    }
   }
 
   // Generate structured data for SEO
@@ -98,7 +101,7 @@ export function generateBreadcrumbsFromPath(pathname: string): BreadcrumbItem[] 
     currentPath += `/${segment}`
     
     // Convert URL segments to readable labels
-    const label = formatBreadcrumbLabel(segment, currentPath, index)
+    const label = formatBreadcrumbLabel(segment)
     
     breadcrumbs.push({
       label,
@@ -111,7 +114,7 @@ export function generateBreadcrumbsFromPath(pathname: string): BreadcrumbItem[] 
 }
 
 // Format URL segments into readable breadcrumb labels
-function formatBreadcrumbLabel(segment: string, fullPath: string, index: number): string {
+function formatBreadcrumbLabel(segment: string): string {
   // Handle specific page types
   const pathMappings: Record<string, string> = {
     'services': 'Services',

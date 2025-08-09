@@ -81,6 +81,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'email-management-testimonial-1',
   name: 'Jennifer Walsh',
   role: 'CEO',
   company: 'TechFlow Solutions',

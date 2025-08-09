@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const austinIndustries = [
 
 const austinTestimonials = [
   {
+    id: 'austin-testimonial-1',
     name: 'Jessica Martinez',
     role: 'Co-Founder',
     company: 'LiveMusic Tech',
@@ -68,6 +66,7 @@ const austinTestimonials = [
     location: 'South Austin, TX'
   },
   {
+    id: 'austin-testimonial-2',
     name: 'David Thompson',
     role: 'CEO',
     company: 'GreenTech Solutions',

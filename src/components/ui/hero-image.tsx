@@ -23,7 +23,6 @@ export function HeroImage({
   className = ''
 }: HeroImageProps) {
   let imageContext
-  let heroDescription: string
 
   switch (type) {
     case 'homepage':

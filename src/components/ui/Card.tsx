@@ -2,8 +2,7 @@ import { ReactNode } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { cn } from '@/utils'
-import { H3, H4, Paragraph, Caption } from './Typography'
-import Button from './Button'
+import { H4, Paragraph, Caption } from './Typography'
 import { Service, Testimonial, BlogPost } from '@/types'
 
 interface BaseCardProps {
@@ -129,7 +128,7 @@ interface BlogCardProps {
   featured?: boolean
 }
 
-export function BlogCard({ post, featured = false }: BlogCardProps) {
+export function BlogCard({ post }: Omit<BlogCardProps, 'featured'>) {
   return (
     <Link href={`/resources/blog/${post.slug}`} className="block h-full">
       <Card className="h-full overflow-hidden group">

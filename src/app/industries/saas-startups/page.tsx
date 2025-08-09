@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { 
   Section, 
   SectionHeader,
@@ -8,9 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -89,6 +86,7 @@ const saasServices = [
 
 const startupTestimonials = [
   {
+    id: 'saas-testimonial-1',
     name: 'Alex Chen',
     role: 'Founder & CEO',
     company: 'DataFlow Analytics',
@@ -97,6 +95,7 @@ const startupTestimonials = [
     location: 'Austin, TX'
   },
   {
+    id: 'saas-testimonial-2',
     name: 'Sarah Kim',
     role: 'Co-founder',
     company: 'GrowthLabs SaaS',

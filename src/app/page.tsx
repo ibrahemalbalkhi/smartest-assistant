@@ -1,6 +1,4 @@
-import { HomeHero } from '@/components/sections'
 import { 
-  Container, 
   Section, 
   SectionHeader, 
   H2,

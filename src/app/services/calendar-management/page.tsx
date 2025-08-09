@@ -106,6 +106,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'calendar-management-testimonial-1',
   name: 'Alexandra Kim',
   role: 'VP of Operations',
   company: 'Global Dynamics Corp',

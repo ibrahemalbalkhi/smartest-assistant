@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { Share2, Twitter, Linkedin, Facebook, Link2, Check } from '@/components/ui/Icons'
+import { Share2, Twitter, Linkedin, Facebook, Link2, Check } from 'lucide-react'
 
 interface SocialShareProps {
   url: string
@@ -62,7 +62,7 @@ export function SocialShare({
       </div>
 
       {/* Native Share (Mobile) */}
-      {typeof window !== 'undefined' && navigator.share && (
+      {typeof window !== 'undefined' && 'share' in navigator && (
         <button
           onClick={shareNative}
           className="p-2 text-gray-400 hover:text-gray-600 hover:bg-gray-100 rounded-lg transition-colors duration-200"
@@ -124,9 +124,8 @@ export function SocialShare({
 // Floating social share component for blog posts
 export function FloatingSocialShare({ 
   url, 
-  title, 
-  description 
-}: SocialShareProps) {
+  title
+}: Omit<SocialShareProps, 'description'>) {
   const [isVisible, setIsVisible] = useState(false)
 
   // Show floating share when scrolled down
@@ -182,10 +181,9 @@ export function FloatingSocialShare({
 // Compact share buttons for cards
 export function CompactSocialShare({ 
   url, 
-  title, 
-  description, 
+  title,
   className = '' 
-}: SocialShareProps) {
+}: Omit<SocialShareProps, 'description'> & { className?: string }) {
   return (
     <div className={`flex items-center space-x-2 ${className}`}>
       <a

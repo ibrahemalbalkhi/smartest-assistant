@@ -197,7 +197,7 @@ export default function GettingStartedPage() {
       <Section background="white" spacing="xl">
         <div className="max-w-4xl mx-auto text-center">
           <H2 className="mb-6">Getting Started with Virtual Assistants</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Your complete guide to successfully hiring and working with virtual assistants. 
             Learn the proven process to go from overwhelmed to optimized in just 30 days.
           </Paragraph>

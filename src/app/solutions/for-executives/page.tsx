@@ -207,6 +207,7 @@ const confidentialityProtocols = [
 
 const successStories = [
   {
+    id: 'executive-testimonial-1',
     name: 'Michael Thompson',
     role: 'Chief Executive Officer',
     company: 'TechVision Industries',
@@ -220,6 +221,7 @@ const successStories = [
     }
   },
   {
+    id: 'executive-testimonial-2',
     name: 'Patricia Rodriguez',
     role: 'Chief Marketing Officer',
     company: 'Global Innovations Corp',
@@ -288,7 +290,7 @@ export default function ExecutivesPage() {
           </div>
           
           <H2 className="mb-6">Executive Support That Elevates Leadership</H2>
-          <Paragraph size="xl" className="mb-8 text-gray-600">
+          <Paragraph size="lg" className="mb-8 text-gray-600">
             Strategic virtual assistants who understand executive demands and C-suite responsibilities. 
             Professional support that enhances your leadership effectiveness and maximizes your strategic impact.
           </Paragraph>

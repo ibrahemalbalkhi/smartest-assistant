@@ -92,6 +92,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'social-media-management-testimonial-1',
   name: 'Rachel Martinez',
   role: 'Founder',
   company: 'EcoGlow Skincare',

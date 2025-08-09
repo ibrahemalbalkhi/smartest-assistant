@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from '@/components/ui/Icons'
+import { Mail, Phone, MapPin, Linkedin, Twitter, Facebook } from 'lucide-react'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 
 interface FooterLink {

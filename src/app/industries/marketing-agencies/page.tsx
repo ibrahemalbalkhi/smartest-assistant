@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { 
   Section, 
   SectionHeader,
@@ -9,8 +8,7 @@ import {
   Paragraph, 
   Button, 
   StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -89,6 +87,7 @@ const agencyServices = [
 
 const agencyTestimonials = [
   {
+    id: 'marketing-agency-testimonial-1',
     name: 'Rachel Thompson',
     role: 'Creative Director',
     company: 'Elevate Digital Marketing',
@@ -97,6 +96,7 @@ const agencyTestimonials = [
     location: 'Portland, OR'
   },
   {
+    id: 'marketing-agency-testimonial-2',
     name: 'Marcus Johnson',
     role: 'Agency Owner',
     company: 'Johnson Creative Studio',
@@ -157,9 +157,7 @@ export default function MarketingAgenciesPage() {
       {/* Hero Section */}
       <IndustryHero
         industry="Marketing & Creative Agencies"
-        subtitle="CREATIVE CAMPAIGN SUPPORT"
-        description="Scale your agency operations with VAs who understand campaign workflows, creative processes, and the fast-paced demands of marketing agencies. Focus on strategy and creativity while we handle execution."
-        features={[
+        industryBenefits={[
           'Multi-client campaign management',
           'Creative tool proficiency',
           'Social media expertise',

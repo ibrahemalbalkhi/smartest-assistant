@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const laIndustries = [
 
 const laTestimonials = [
   {
+    id: 'los-angeles-testimonial-1',
     name: 'Alexandra Chen',
     role: 'Executive Producer',
     company: 'Sunset Studios',
@@ -68,6 +66,7 @@ const laTestimonials = [
     location: 'West Hollywood, CA'
   },
   {
+    id: 'los-angeles-testimonial-2',
     name: 'Marcus Williams',
     role: 'Co-Founder',
     company: 'BeachTech Innovations',

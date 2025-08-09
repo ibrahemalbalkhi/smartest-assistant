@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { OptimizedImage } from '@/components/ui/optimized-image'
 import { getFeaturedPosts, formatPublishDate } from '@/lib/blog'
-import { Clock, User, ArrowRight } from '@/components/ui/Icons'
+import { Clock, User, ArrowRight } from 'lucide-react'
 
 export function FeaturedPost() {
   const featuredPosts = getFeaturedPosts(1)
@@ -11,6 +11,10 @@ export function FeaturedPost() {
   }
 
   const post = featuredPosts[0]
+
+  if (!post) {
+    return null
+  }
 
   return (
     <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl overflow-hidden">

@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const nycIndustries = [
 
 const nycTestimonials = [
   {
+    id: 'nyc-testimonial-1',
     name: 'James Morrison',
     role: 'Managing Director',
     company: 'Empire Capital Partners',
@@ -68,6 +66,7 @@ const nycTestimonials = [
     location: 'Financial District, NYC'
   },
   {
+    id: 'nyc-testimonial-2',
     name: 'Maria Santos',
     role: 'Real Estate Broker',
     company: 'Manhattan Premier Properties',

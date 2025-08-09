@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { cn } from '@/utils'
-import { H3, Paragraph, Quote } from './Typography'
+import { Paragraph, Quote } from './Typography'
 import { TestimonialCard } from './Card'
 import { Testimonial } from '@/types'
 
@@ -71,7 +71,7 @@ export default function TestimonialCarousel({
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <div key={testimonial.id} className="w-full flex-shrink-0">
               <TestimonialSlide testimonial={testimonial} />
             </div>

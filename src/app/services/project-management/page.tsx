@@ -113,6 +113,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'project-management-testimonial-1',
   name: 'James Wilson',
   role: 'CTO',
   company: 'InnovateLab',

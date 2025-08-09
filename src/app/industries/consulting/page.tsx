@@ -8,8 +8,7 @@ import {
   Paragraph, 
   Button, 
   StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -88,6 +87,7 @@ const consultingServices = [
 
 const consultingTestimonials = [
   {
+    id: 'consulting-testimonial-1',
     name: 'Amanda Rodriguez',
     role: 'Managing Partner',
     company: 'Strategic Growth Advisors',
@@ -96,6 +96,7 @@ const consultingTestimonials = [
     location: 'Dallas, TX'
   },
   {
+    id: 'consulting-testimonial-2',
     name: 'David Park',
     role: 'Principal Consultant',
     company: 'Park Digital Strategy',
@@ -152,9 +153,7 @@ export default function ConsultingPage() {
       {/* Hero Section */}
       <IndustryHero
         industry="Consulting & Advisory"
-        subtitle="STRATEGIC OPERATIONAL SUPPORT"
-        description="Elevate your consulting practice with VAs who understand client deliverables, research rigor, and the professional standards that define successful consulting engagements."
-        features={[
+        industryBenefits={[
           'Research & analysis expertise',
           'Professional presentation skills',
           'Client confidentiality protocols',

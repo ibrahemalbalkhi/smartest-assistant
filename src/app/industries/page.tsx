@@ -98,11 +98,6 @@ const industries = [
 ]
 
 export default function IndustriesHub() {
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Industries', href: '/industries', current: true }
-  ]
-
   const featuredIndustries = industries.filter(industry => industry.featured)
   const otherIndustries = industries.filter(industry => !industry.featured)
 

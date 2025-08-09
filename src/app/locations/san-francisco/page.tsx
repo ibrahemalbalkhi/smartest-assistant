@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const sfIndustries = [
 
 const sfTestimonials = [
   {
+    id: 'san-francisco-testimonial-1',
     name: 'Michael Chen',
     role: 'Founder & CEO',
     company: 'TechFlow Dynamics',
@@ -68,6 +66,7 @@ const sfTestimonials = [
     location: 'South of Market, SF'
   },
   {
+    id: 'san-francisco-testimonial-2',
     name: 'Sarah Rodriguez',
     role: 'VP Operations',
     company: 'BayTech Solutions',

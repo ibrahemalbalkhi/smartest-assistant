@@ -7,10 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard,
-  ServiceCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { LocationHero } from '@/components/sections'
@@ -60,6 +57,7 @@ const chicagoIndustries = [
 
 const chicagoTestimonials = [
   {
+    id: 'chicago-testimonial-1',
     name: 'Robert Johnson',
     role: 'Operations Director',
     company: 'Midwest Manufacturing Solutions',
@@ -68,6 +66,7 @@ const chicagoTestimonials = [
     location: 'The Loop, Chicago'
   },
   {
+    id: 'chicago-testimonial-2',
     name: 'Patricia Williams',
     role: 'Healthcare Administrator',
     company: 'Chicago Medical Group',

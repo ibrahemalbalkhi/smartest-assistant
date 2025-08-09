@@ -26,18 +26,6 @@ export const metadata: Metadata = {
   }
 }
 
-const serviceFeatures = [
-  'Blog posts and articles',
-  'Social media content and captions',
-  'Website copy and landing pages',
-  'Email marketing campaigns',
-  'Product descriptions',
-  'Press releases and announcements',
-  'Case studies and whitepapers',
-  'Video scripts and presentations',
-  'SEO-optimized content',
-  'Content strategy and planning'
-]
 
 const contentProcess = [
   {
@@ -108,6 +96,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'content-creation-testimonial-1',
   name: 'Maria Rodriguez',
   role: 'Marketing Director',
   company: 'GrowthTech Inc',

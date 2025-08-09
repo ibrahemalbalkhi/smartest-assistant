@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from 'react'
-import { CheckCircle, Circle, Download, Clock, DollarSign, TrendingUp, FileText } from '@/components/ui/Icons'
+import { CheckCircle, Circle, Download, Clock, DollarSign, TrendingUp, FileText } from 'lucide-react'
 
 interface Task {
   id: string

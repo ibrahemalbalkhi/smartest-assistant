@@ -108,6 +108,7 @@ const faqs = [
 ]
 
 const testimonial = {
+  id: 'data-entry-research-testimonial-1',
   name: 'Rachel Kim',
   role: 'Operations Manager',
   company: 'DataDriven Solutions',

@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import { ArrowRight, ExternalLink } from '@/components/ui/Icons'
-import { getRelatedLinks, getHubLink, generateAnchorText, type InternalLink } from '@/lib/internal-linking'
+import { ArrowRight, ExternalLink } from 'lucide-react'
+import { getRelatedLinks, getHubLink, type InternalLink } from '@/lib/internal-linking'
 
 interface RelatedLinksProps {
   pageType: 'service' | 'location' | 'industry' | 'blog'
@@ -20,7 +20,7 @@ export function RelatedLinks({
   title
 }: RelatedLinksProps) {
   const relatedLinks = getRelatedLinks(pageType, pageSlug, maxLinks)
-  const hubLink = showHub ? getHubLink(pageType) : null
+  const hubLink = showHub && pageType !== 'blog' ? getHubLink(pageType as 'service' | 'location' | 'industry') : null
   
   if (relatedLinks.length === 0 && !hubLink) {
     return null
@@ -55,7 +55,7 @@ export function RelatedLinks({
 
         {/* Related links */}
         {relatedLinks.map((link) => (
-          <RelatedLinkCard key={link.href} link={link} pageType={pageType} />
+          <RelatedLinkCard key={link.href} link={link} />
         ))}
       </div>
     </div>
@@ -64,11 +64,9 @@ export function RelatedLinks({
 
 // Individual related link card
 function RelatedLinkCard({ 
-  link, 
-  pageType 
+  link 
 }: { 
   link: InternalLink
-  pageType: string 
 }) {
   return (
     <Link
@@ -181,11 +179,9 @@ export function IndustryRelatedLinks({ industrySlug }: { industrySlug: string })
 
 // Blog post related links
 export function BlogRelatedLinks({ 
-  postSlug,
-  category = 'general'
+  postSlug
 }: { 
   postSlug: string
-  category?: string 
 }) {
   return (
     <RelatedLinks
@@ -210,9 +206,8 @@ interface CrossPageNavigationProps {
 }
 
 export function CrossPageNavigation({ 
-  currentPage, 
   className = '' 
-}: CrossPageNavigationProps) {
+}: Omit<CrossPageNavigationProps, 'currentPage'>) {
   // This would typically fetch similar/related pages from a CMS or API
   const relatedPages = [
     {

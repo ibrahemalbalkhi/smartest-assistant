@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { cn } from '@/utils'
 import { H1, H2, Lead, Paragraph } from '@/components/ui/Typography'
 import Button from '@/components/ui/Button'
-import Container from '@/components/ui/Container'
 import Section from '@/components/ui/Section'
 
 interface BaseHeroProps {
@@ -229,7 +228,7 @@ export function LocationHero({
   localFeatures,
   className,
   ...props
-}: Omit<HeroProps, 'variant'> & {
+}: Omit<HeroProps, 'variant' | 'title'> & {
   city: string
   state: string
   localFeatures?: string[]
@@ -273,7 +272,7 @@ export function IndustryHero({
   industryBenefits,
   className,
   ...props
-}: Omit<HeroProps, 'variant'> & {
+}: Omit<HeroProps, 'variant' | 'title'> & {
   industry: string
   industryBenefits?: string[]
 }) {

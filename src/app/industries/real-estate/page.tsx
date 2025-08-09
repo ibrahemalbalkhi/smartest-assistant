@@ -1,6 +1,5 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import Image from 'next/image'
 import { 
   Section, 
   SectionHeader,
@@ -8,9 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button, 
-  StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -98,6 +95,7 @@ const realEstateSpecializations = [
 
 const realEstateTestimonials = [
   {
+    id: 'real-estate-testimonial-1',
     name: 'Linda Thompson',
     role: 'Top Producer',
     company: 'Premier Realty Group',
@@ -106,6 +104,7 @@ const realEstateTestimonials = [
     location: 'Phoenix, AZ'
   },
   {
+    id: 'real-estate-testimonial-2',
     name: 'Carlos Rodriguez',
     role: 'Commercial Broker',
     company: 'Metro Commercial Properties',

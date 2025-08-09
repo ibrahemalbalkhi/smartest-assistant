@@ -9,7 +9,6 @@ import {
   Button,
   FeatureCard
 } from '@/components/ui'
-import { SERVICES } from '@/lib/constants'
 
 export const metadata: Metadata = {
   title: '404 - Page Not Found | Smartest Assistant',
@@ -128,7 +127,6 @@ export default function NotFound() {
                 icon={<span className="text-3xl">{page.icon}</span>}
                 title={page.title}
                 description={page.description}
-                className="h-full transition-transform group-hover:scale-105"
               />
             </Link>
           ))}

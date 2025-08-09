@@ -8,8 +8,7 @@ import {
   Paragraph, 
   Button, 
   StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -88,6 +87,7 @@ const healthcareServices = [
 
 const healthcareTestimonials = [
   {
+    id: 'healthcare-testimonial-1',
     name: 'Dr. Patricia Williams',
     role: 'Family Medicine Physician',
     company: 'Williams Family Practice',
@@ -96,6 +96,7 @@ const healthcareTestimonials = [
     location: 'Phoenix, AZ'
   },
   {
+    id: 'healthcare-testimonial-2',
     name: 'Michael Rodriguez',
     role: 'Practice Administrator',
     company: 'Central Valley Medical Group',
@@ -150,9 +151,7 @@ export default function HealthcarePage() {
       {/* Hero Section */}
       <IndustryHero
         industry="Healthcare"
-        subtitle="HIPAA-COMPLIANT MEDICAL SUPPORT"
-        description="Transform your healthcare practice with smart VAs who understand medical workflows, patient care protocols, and healthcare compliance requirements. Focus on patients while we handle the administration."
-        features={[
+        industryBenefits={[
           'HIPAA-compliant operations',
           'Medical terminology expertise',
           'EHR system proficiency',

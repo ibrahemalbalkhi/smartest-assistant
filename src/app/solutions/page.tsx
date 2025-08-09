@@ -7,8 +7,7 @@ import {
   H3, 
   Paragraph, 
   Button,
-  Container,
-  StatCard
+  Container
 } from '@/components/ui'
 import { ServiceSchema } from '@/components/seo/StructuredData'
 
@@ -102,11 +101,6 @@ const businessStageGuide = [
 ]
 
 export default function SolutionsHub() {
-  const breadcrumbs = [
-    { label: 'Home', href: '/' },
-    { label: 'Solutions', href: '/solutions', current: true }
-  ]
-
   return (
     <>
       <ServiceSchema 
@@ -224,7 +218,7 @@ export default function SolutionsHub() {
       </Section>
 
       {/* Business Stage Guide */}
-      <Section id="business-stage-guide" background="gray" spacing="lg">
+      <Section background="gray" spacing="lg">
         <Container>
           <SectionHeader
             title="Which Solution Is Right for You?"

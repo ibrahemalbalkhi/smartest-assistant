@@ -26,8 +26,9 @@ export function LazySection({
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+      (entries) => {
+        const entry = entries[0]
+        if (entry && entry.isIntersecting) {
           setIsVisible(true)
           
           if (triggerOnce) {
@@ -88,8 +89,9 @@ export function LazyImage({
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
+      (entries) => {
+        const entry = entries[0]
+        if (entry && entry.isIntersecting) {
           setIsInView(true)
           observer.disconnect()
         }
@@ -152,13 +154,13 @@ interface LazyComponentProps {
 export function LazyComponent({ importFunc, fallback = null, props = {} }: LazyComponentProps) {
   const [Component, setComponent] = useState<React.ComponentType<any> | null>(null)
   const [isLoading, setIsLoading] = useState(false)
-  const [isInView, setIsInView] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting && !Component && !isLoading) {
+      (entries) => {
+        const entry = entries[0]
+        if (entry && entry.isIntersecting && !Component && !isLoading) {
           setIsLoading(true)
           importFunc()
             .then((module) => {

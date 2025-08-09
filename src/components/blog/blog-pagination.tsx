@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { ChevronLeft, ChevronRight } from '@/components/ui/Icons'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 interface BlogPaginationProps {
   currentPage: number
@@ -47,13 +47,16 @@ export function BlogPagination({
 
     // Add dots between non-consecutive pages
     for (let i = 0; i < uniqueRange.length; i++) {
+      const currentPage = uniqueRange[i]
+      const prevPage = uniqueRange[i - 1]
+      
       if (i === 0) {
-        rangeWithDots.push(uniqueRange[i])
-      } else if (uniqueRange[i] - uniqueRange[i - 1] === 1) {
-        rangeWithDots.push(uniqueRange[i])
+        rangeWithDots.push(currentPage)
+      } else if (currentPage && prevPage && currentPage - prevPage === 1) {
+        rangeWithDots.push(currentPage)
       } else {
         rangeWithDots.push('...')
-        rangeWithDots.push(uniqueRange[i])
+        rangeWithDots.push(currentPage)
       }
     }
 

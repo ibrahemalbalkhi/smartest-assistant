@@ -8,8 +8,7 @@ import {
   Paragraph, 
   Button, 
   StatCard,
-  TestimonialCard,
-  FeatureCard
+  TestimonialCard
 } from '@/components/ui'
 import FAQAccordion from '@/components/ui/FAQ'
 import { IndustryHero } from '@/components/sections'
@@ -88,6 +87,7 @@ const legalServices = [
 
 const legalTestimonials = [
   {
+    id: 'legal-testimonial-1',
     name: 'Robert Mitchell',
     role: 'Managing Partner',
     company: 'Mitchell & Associates Law',
@@ -96,6 +96,7 @@ const legalTestimonials = [
     location: 'Chicago, IL'
   },
   {
+    id: 'legal-testimonial-2',
     name: 'Sarah Davidson',
     role: 'Solo Practitioner',
     company: 'Davidson Family Law',
@@ -152,9 +153,7 @@ export default function LegalPage() {
       {/* Hero Section */}
       <IndustryHero
         industry="Legal & Law Firms"
-        subtitle="CONFIDENTIAL LEGAL SUPPORT"
-        description="Scale your legal practice with VAs who understand legal ethics, client confidentiality, and the precision required in law. Focus on legal strategy while we handle practice administration."
-        features={[
+        industryBenefits={[
           'Attorney-client privilege trained',
           'Legal research expertise',
           'Court filing proficiency',

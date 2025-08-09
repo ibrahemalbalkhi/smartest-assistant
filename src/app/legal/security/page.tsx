@@ -5,8 +5,7 @@ import {
   SectionHeader,
   H2, 
   H3, 
-  Paragraph, 
-  Button
+  Paragraph
 } from '@/components/ui'
 
 export const metadata: Metadata = {
