@@ -36,6 +36,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: "Smart Virtual Assistants Who Think Ahead | Smartest Assistant",
     description: "Hire smart virtual assistants who think strategically & work autonomously. Save 40+ hrs/week.",
