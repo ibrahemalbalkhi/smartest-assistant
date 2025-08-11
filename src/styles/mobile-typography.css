@@ -49,7 +49,7 @@
     font-size: 1rem; /* 16px minimum */
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #FFFFFF; /* was #374151 gray-700 - changed to white for contrast */
+    color: #374151; /* restored original gray-700 for text readability */
   }
 
   /* Lead text for introductory paragraphs */
@@ -265,7 +265,7 @@
     }
 
     .text-sm, .text-xs {
-      color: #FFFFFF; /* was #1F2937 gray-800 - changed to white for contrast */
+      color: #1F2937; /* restored original gray-800 for text readability */
     }
   }
 

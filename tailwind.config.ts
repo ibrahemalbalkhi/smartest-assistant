@@ -17,7 +17,8 @@ const config: Config = {
         'success': 'var(--success)',
         'error': 'var(--error)',
         'warning': 'var(--warning)',
-        // Override gray colors with white for better contrast on dark backgrounds
+        // Override lighter gray colors with white for better contrast on dark backgrounds
+        // Keep dark grays (800, 900) as original dark colors for text readability
         // Keeping the gray naming convention for easier maintenance
         gray: {
           50: '#ffffff',   // was #f9fafb
@@ -27,10 +28,10 @@ const config: Config = {
           400: '#ffffff',  // was #9ca3af
           500: '#ffffff',  // was #6b7280
           600: '#ffffff',  // was #4b5563
-          700: '#ffffff',  // was #374151
-          800: '#ffffff',  // was #1f2937
-          900: '#ffffff',  // was #111827
-          950: '#ffffff',  // was #030712
+          700: '#374151',  // restored original dark color for text
+          800: '#1f2937',  // restored original dark color for text
+          900: '#111827',  // restored original dark color for primary text
+          950: '#030712',  // restored original darkest color
         },
       },
       fontFamily: {

@@ -7,18 +7,19 @@
   --primary-light: #E4F6FF;     /* Light Blue - Backgrounds */
   --accent-amber: #F59E0B;      /* Amber-500 - CTAs, Highlights */
   --accent-hover: #D97706;      /* Amber-600 - CTA hovers */
-  /* Gray colors overridden to white for better contrast on dark backgrounds */
+  /* Light gray colors overridden to white for better contrast on dark backgrounds */
+  /* Dark gray colors (700-950) kept as original dark colors for text readability */
   /* Keeping gray variable names for easier maintenance and consistency */
-  --gray-900: #FFFFFF;          /* was #111827 - Text primary */
-  --gray-800: #FFFFFF;          /* was #1F2937 - Text secondary dark */
-  --gray-700: #FFFFFF;          /* was #374151 */
-  --gray-600: #FFFFFF;          /* was #4B5563 - Text secondary */
-  --gray-500: #FFFFFF;          /* was #6B7280 */
-  --gray-400: #FFFFFF;          /* was #9CA3AF */
-  --gray-300: #FFFFFF;          /* was #D1D5DB */
-  --gray-200: #FFFFFF;          /* was #E5E7EB */
-  --gray-100: #FFFFFF;          /* was #F3F4F6 - Backgrounds */
-  --gray-50: #FFFFFF;           /* was #F9FAFB */
+  --gray-900: #111827;          /* restored original - Text primary */
+  --gray-800: #1F2937;          /* restored original - Text secondary dark */
+  --gray-700: #374151;          /* restored original - Text medium */
+  --gray-600: #FFFFFF;          /* was #4B5563 - changed to white */
+  --gray-500: #FFFFFF;          /* was #6B7280 - changed to white */
+  --gray-400: #FFFFFF;          /* was #9CA3AF - changed to white */
+  --gray-300: #FFFFFF;          /* was #D1D5DB - changed to white */
+  --gray-200: #FFFFFF;          /* was #E5E7EB - changed to white */
+  --gray-100: #FFFFFF;          /* was #F3F4F6 - changed to white */
+  --gray-50: #FFFFFF;           /* was #F9FAFB - changed to white */
   --success: #10B981;           /* Green-500 - Success states */
   --error: #EF4444;             /* Red-500 - Error states */
   --warning: #F59E0B;           /* Amber-500 - Warning states */
@@ -142,7 +143,7 @@ html {
 
 body {
   background: var(--white);
-  color: var(--gray-900); /* This will now be white due to CSS variable override */
+  color: var(--gray-900); /* This is now restored to original dark color for text readability */
   font-family: var(--font-primary);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
@@ -153,7 +154,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: var(--leading-tight);
-  color: var(--gray-900); /* This will now be white due to CSS variable override */
+  color: var(--gray-900); /* This is now restored to original dark color for text readability */
 }
 
 h1 { font-size: var(--text-5xl); }
