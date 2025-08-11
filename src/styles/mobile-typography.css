@@ -49,14 +49,14 @@
     font-size: 1rem; /* 16px minimum */
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #374151; /* gray-700 */
+    color: #FFFFFF; /* was #374151 gray-700 - changed to white for contrast */
   }
 
   /* Lead text for introductory paragraphs */
   .text-lead {
     font-size: 1.125rem; /* 18px */
     line-height: 1.65;
-    color: #4B5563; /* gray-600 */
+    color: #FFFFFF; /* was #4B5563 gray-600 - changed to white for contrast */
     margin-bottom: 1.25rem;
   }
 
@@ -107,7 +107,7 @@
   .card-text {
     font-size: 1rem; /* 16px */
     line-height: 1.55;
-    color: #6B7280; /* gray-500 */
+    color: #FFFFFF; /* was #6B7280 gray-500 - changed to white for contrast */
   }
 
   /* List styling for mobile */
@@ -265,7 +265,7 @@
     }
 
     .text-sm, .text-xs {
-      color: #1F2937; /* gray-800 */
+      color: #FFFFFF; /* was #1F2937 gray-800 - changed to white for contrast */
     }
   }
 

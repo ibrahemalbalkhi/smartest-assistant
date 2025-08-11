@@ -17,6 +17,21 @@ const config: Config = {
         'success': 'var(--success)',
         'error': 'var(--error)',
         'warning': 'var(--warning)',
+        // Override gray colors with white for better contrast on dark backgrounds
+        // Keeping the gray naming convention for easier maintenance
+        gray: {
+          50: '#ffffff',   // was #f9fafb
+          100: '#ffffff',  // was #f3f4f6
+          200: '#ffffff',  // was #e5e7eb
+          300: '#ffffff',  // was #d1d5db
+          400: '#ffffff',  // was #9ca3af
+          500: '#ffffff',  // was #6b7280
+          600: '#ffffff',  // was #4b5563
+          700: '#ffffff',  // was #374151
+          800: '#ffffff',  // was #1f2937
+          900: '#ffffff',  // was #111827
+          950: '#ffffff',  // was #030712
+        },
       },
       fontFamily: {
         sans: ['var(--font-primary)'],

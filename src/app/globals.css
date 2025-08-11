@@ -7,16 +7,18 @@
   --primary-light: #E4F6FF;     /* Light Blue - Backgrounds */
   --accent-amber: #F59E0B;      /* Amber-500 - CTAs, Highlights */
   --accent-hover: #D97706;      /* Amber-600 - CTA hovers */
-  --gray-900: #111827;          /* Text primary */
-  --gray-800: #1F2937;          /* Text secondary dark */
-  --gray-700: #374151;
-  --gray-600: #4B5563;          /* Text secondary */
-  --gray-500: #6B7280;
-  --gray-400: #9CA3AF;
-  --gray-300: #D1D5DB;
-  --gray-200: #E5E7EB;
-  --gray-100: #F3F4F6;          /* Backgrounds */
-  --gray-50: #F9FAFB;
+  /* Gray colors overridden to white for better contrast on dark backgrounds */
+  /* Keeping gray variable names for easier maintenance and consistency */
+  --gray-900: #FFFFFF;          /* was #111827 - Text primary */
+  --gray-800: #FFFFFF;          /* was #1F2937 - Text secondary dark */
+  --gray-700: #FFFFFF;          /* was #374151 */
+  --gray-600: #FFFFFF;          /* was #4B5563 - Text secondary */
+  --gray-500: #FFFFFF;          /* was #6B7280 */
+  --gray-400: #FFFFFF;          /* was #9CA3AF */
+  --gray-300: #FFFFFF;          /* was #D1D5DB */
+  --gray-200: #FFFFFF;          /* was #E5E7EB */
+  --gray-100: #FFFFFF;          /* was #F3F4F6 - Backgrounds */
+  --gray-50: #FFFFFF;           /* was #F9FAFB */
   --success: #10B981;           /* Green-500 - Success states */
   --error: #EF4444;             /* Red-500 - Error states */
   --warning: #F59E0B;           /* Amber-500 - Warning states */
@@ -140,7 +142,7 @@ html {
 
 body {
   background: var(--white);
-  color: var(--gray-900);
+  color: var(--gray-900); /* This will now be white due to CSS variable override */
   font-family: var(--font-primary);
   font-size: var(--text-base);
   line-height: var(--leading-normal);
@@ -151,7 +153,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: var(--leading-tight);
-  color: var(--gray-900);
+  color: var(--gray-900); /* This will now be white due to CSS variable override */
 }
 
 h1 { font-size: var(--text-5xl); }
@@ -197,16 +199,16 @@ p {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--gray-100);
+  background: var(--gray-100); /* This will now be white due to CSS variable override */
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--gray-400);
+  background: var(--gray-400); /* This will now be white due to CSS variable override */
   border-radius: var(--radius-full);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gray-500);
+  background: var(--gray-500); /* This will now be white due to CSS variable override */
 }
 
 /* Performance Optimizations */

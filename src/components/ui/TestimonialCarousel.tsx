@@ -123,18 +123,6 @@ export default function TestimonialCarousel({
         </div>
       )}
 
-      {/* Progress Bar */}
-      {autoplay && isPlaying && (
-        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200">
-          <div 
-            className="h-full bg-primary-blue transition-all ease-linear"
-            style={{ 
-              width: `${((currentIndex + 1) / testimonials.length) * 100}%`,
-              transitionDuration: `${autoplayInterval}ms` 
-            }}
-          />
-        </div>
-      )}
     </div>
   )
 }
