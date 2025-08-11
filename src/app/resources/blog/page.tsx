@@ -77,19 +77,19 @@ export default async function BlogPage({
               <div className="space-y-4">
                 {[
                   {
-                    title: 'How to Hire Your First Virtual Assistant',
-                    href: '/resources/blog/how-to-hire-virtual-assistant-guide',
-                    readTime: '8 min read'
+                    title: 'Complete Guide to Hiring Virtual Assistants',
+                    href: '/resources/blog/complete-guide-hiring-virtual-assistants-2024',
+                    readTime: '18 min read'
                   },
                   {
-                    title: 'ROI Calculator: Measuring VA Success',
-                    href: '/resources/blog/roi-calculator-virtual-assistant',
-                    readTime: '5 min read'
+                    title: 'Virtual Assistant vs Employee Analysis',
+                    href: '/resources/blog/virtual-assistant-vs-employee-cost-analysis',
+                    readTime: '16 min read'
                   },
                   {
-                    title: 'Email Management Best Practices',
-                    href: '/resources/blog/email-management-best-practices',
-                    readTime: '6 min read'
+                    title: 'Email Management Mastery with VAs',
+                    href: '/resources/blog/email-management-mastery-virtual-assistants',
+                    readTime: '15 min read'
                   }
                 ].map((post, index) => (
                   <div key={index} className="pb-4 border-b border-gray-100 last:border-b-0">

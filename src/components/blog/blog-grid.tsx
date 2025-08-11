@@ -80,7 +80,7 @@ export function BlogGrid({
               {/* Category Badge */}
               <div className="flex items-center justify-between mb-3">
                 <span
-                  className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-${post.category.color}-100 text-${post.category.color}-800`}
+                  className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800"
                 >
                   {post.category.name}
                 </span>
