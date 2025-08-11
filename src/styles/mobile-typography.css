@@ -56,7 +56,7 @@
   .text-lead {
     font-size: 1.125rem; /* 18px */
     line-height: 1.65;
-    color: #FFFFFF; /* was #4B5563 gray-600 - changed to white for contrast */
+    color: #4B5563; /* restored original gray-600 for text readability */
     margin-bottom: 1.25rem;
   }
 

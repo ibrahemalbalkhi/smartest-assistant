@@ -27,7 +27,7 @@ const config: Config = {
           300: '#ffffff',  // was #d1d5db
           400: '#ffffff',  // was #9ca3af
           500: '#ffffff',  // was #6b7280
-          600: '#ffffff',  // was #4b5563
+          600: '#4b5563',  // restored original dark color for text
           700: '#374151',  // restored original dark color for text
           800: '#1f2937',  // restored original dark color for text
           900: '#111827',  // restored original dark color for primary text
