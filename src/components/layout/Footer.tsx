@@ -31,12 +31,14 @@ export default function Footer() {
               >
                 {COMPANY_EMAIL}
               </a>
-              <a
-                href={`tel:${COMPANY_PHONE}`}
-                className="block text-gray-400 hover:text-white transition-colors duration-200"
-              >
-                {COMPANY_PHONE}
-              </a>
+              {COMPANY_PHONE && (
+                <a
+                  href={`tel:${COMPANY_PHONE}`}
+                  className="block text-gray-400 hover:text-white transition-colors duration-200"
+                >
+                  {COMPANY_PHONE}
+                </a>
+              )}
             </div>
           </div>
 
@@ -94,11 +96,11 @@ export default function Footer() {
 
         {/* CTA Section */}
         <div className="mt-12 pt-8 border-t border-gray-800">
-          <div className="bg-primary-blue rounded-xl p-8 text-center">
-            <h3 className="text-2xl font-bold mb-4">
+          <div className="bg-gradient-to-r from-primary-blue to-primary-dark rounded-xl p-8 text-center">
+            <h3 className="text-2xl font-bold mb-4 text-white">
               Ready to 10x Your Productivity?
             </h3>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-white/90 mb-6 max-w-2xl mx-auto">
               Join 500+ businesses who save 40+ hours per week with smart virtual assistants.
             </p>
             <Link

@@ -245,9 +245,9 @@ export const FOOTER_LINKS = {
     { label: 'FAQ', href: '/faq' },
   ],
   legal: [
-    { label: 'Privacy Policy', href: '/privacy-policy' },
-    { label: 'Terms of Service', href: '/terms-of-service' },
-    { label: 'Cookie Policy', href: '/cookie-policy' },
+    { label: 'Privacy Policy', href: '/privacy' },
+    { label: 'Terms of Service', href: '/terms' },
+    { label: 'Cookie Policy', href: '/legal/cookies' },
   ]
 }
 

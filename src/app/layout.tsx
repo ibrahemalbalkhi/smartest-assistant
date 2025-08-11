@@ -94,9 +94,9 @@ export default function RootLayout({
         {/* Preload critical resources */}
         <link 
           rel="preload" 
-          href="/images/logo-smartest-assistant.webp" 
+          href="/images/logo-smartest-assistant.svg" 
           as="image" 
-          type="image/webp"
+          type="image/svg+xml"
         />
         
         {/* Critical CSS for above-the-fold content */}
@@ -110,11 +110,19 @@ export default function RootLayout({
               content-visibility: auto;
               contain-intrinsic-size: 0 500px;
             }
+            /* Reduce layout shifts */
+            img, video { 
+              height: auto; 
+              max-width: 100%; 
+            }
+            .layout-stable { 
+              contain: layout style; 
+            }
           `
         }} />
         
         {/* Performance optimizations */}
-        <meta name="theme-color" content="#1E40AF" />
+        <meta name="theme-color" content="#0066CC" />
         <meta name="color-scheme" content="light" />
       </head>
       <body className="font-sans antialiased">

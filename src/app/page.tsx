@@ -271,10 +271,10 @@ export default function Home() {
           />
           
           <Link href="/services" className="group">
-            <div className="bg-primary-blue text-white rounded-xl p-8 h-full hover:bg-primary-dark transition-colors duration-300">
+            <div className="bg-gradient-to-br from-primary-blue to-primary-dark text-white rounded-xl p-8 h-full hover:shadow-lg transition-all duration-300">
               <div className="text-3xl mb-4">✨</div>
               <H3 className="mb-3 text-white">15+ More Services</H3>
-              <Paragraph className="text-blue-100 mb-4">
+              <Paragraph className="text-white/90 mb-4">
                 Data entry, research, bookkeeping, customer support, and everything in between.
               </Paragraph>
               <span className="font-semibold group-hover:underline">
@@ -485,7 +485,7 @@ export default function Home() {
           <H2 className="mb-6 text-white">
             Stop Working 70-Hour Weeks. Start Working Smarter.
           </H2>
-          <Paragraph size="lg" className="mb-8 text-blue-100">
+          <Paragraph size="lg" className="mb-8 text-white/90">
             Every day you delay is another day of lost productivity, missed opportunities, and unnecessary stress. 
             Join the 500+ business leaders who&apos;ve already made the switch to smart delegation.
           </Paragraph>
@@ -494,15 +494,15 @@ export default function Home() {
             <div className="grid md:grid-cols-3 gap-6 text-white">
               <div>
                 <div className="text-3xl font-bold mb-2">$50K+</div>
-                <div className="text-blue-100">Average Annual Savings</div>
+                <div className="text-white/80">Average Annual Savings</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">48 hrs</div>
-                <div className="text-blue-100">To Full Productivity</div>
+                <div className="text-white/80">To Full Productivity</div>
               </div>
               <div>
                 <div className="text-3xl font-bold mb-2">98%</div>
-                <div className="text-blue-100">Client Satisfaction</div>
+                <div className="text-white/80">Client Satisfaction</div>
               </div>
             </div>
           </div>
@@ -516,7 +516,7 @@ export default function Home() {
             </Button>
           </div>
           
-          <Paragraph className="text-blue-100 text-sm">
+          <Paragraph className="text-white/80 text-sm">
             ✅ Free consultation • ✅ No setup fees • ✅ 30-day money-back guarantee
           </Paragraph>
         </div>

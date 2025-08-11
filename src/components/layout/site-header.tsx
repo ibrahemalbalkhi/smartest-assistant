@@ -27,7 +27,7 @@ export function SiteHeader() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <OptimizedImage
-                src="/images/logo-smartest-assistant.webp"
+                src="/images/logo-smartest-assistant.svg"
                 alt="Smartest Assistant - Smart Virtual Assistant Services"
                 width={180}
                 height={54}

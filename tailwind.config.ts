@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         'primary-blue': 'var(--primary-blue)',
         'primary-dark': 'var(--primary-dark)',
+        'primary-light': 'var(--primary-light)',
         'accent-amber': 'var(--accent-amber)',
         'accent-hover': 'var(--accent-hover)',
         'success': 'var(--success)',

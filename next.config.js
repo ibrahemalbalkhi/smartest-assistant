@@ -96,6 +96,30 @@ const nextConfig = {
       }
     ]
   },
+  async redirects() {
+    return [
+      {
+        source: '/case-studies',
+        destination: '/resources/case-studies',
+        permanent: true
+      },
+      {
+        source: '/privacy-policy',
+        destination: '/privacy',
+        permanent: true
+      },
+      {
+        source: '/terms-of-service',
+        destination: '/terms',
+        permanent: true
+      },
+      {
+        source: '/cookie-policy',
+        destination: '/legal/cookies',
+        permanent: true
+      }
+    ]
+  },
   async rewrites() {
     return [
       {

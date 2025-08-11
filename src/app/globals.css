@@ -2,8 +2,9 @@
 
 :root {
   /* Brand Colors */
-  --primary-blue: #1E40AF;      /* Blue-800 - Trust, Professional */
-  --primary-dark: #1E3A8A;      /* Blue-900 - Hover states */
+  --primary-blue: #0066CC;      /* Accessible Blue - Trust, Professional */
+  --primary-dark: #0052A3;      /* Darker Blue - Hover states */
+  --primary-light: #E4F6FF;     /* Light Blue - Backgrounds */
   --accent-amber: #F59E0B;      /* Amber-500 - CTAs, Highlights */
   --accent-hover: #D97706;      /* Amber-600 - CTA hovers */
   --gray-900: #111827;          /* Text primary */
